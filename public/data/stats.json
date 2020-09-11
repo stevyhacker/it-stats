@@ -1,0 +1,532 @@
+{
+  "2015": [
+    {
+      "firma": "Domen",
+      "": "",
+      "ukupniPrihod": 6111440,
+      "profit": 2003427,
+      "brojZaposlenih": 5,
+      "id": 2
+    },
+    {
+      "firma": "CoreIT",
+      "": "",
+      "ukupniPrihod": 1744396,
+      "profit": 384286,
+      "brojZaposlenih": 10,
+      "id": 3
+    },
+    {
+      "firma": "Media Monkeys",
+      "": "",
+      "ukupniPrihod": 1027100,
+      "profit": 521543,
+      "brojZaposlenih": 10,
+      "id": 4
+    },
+    {
+      "firma": "Bild",
+      "": "",
+      "ukupniPrihod": 471062,
+      "profit": 122273,
+      "brojZaposlenih": 18,
+      "id": 5
+    },
+    {
+      "firma": "Logate",
+      "": "",
+      "ukupniPrihod": 434573,
+      "profit": 93408,
+      "brojZaposlenih": 12,
+      "id": 6
+    },
+    {
+      "firma": "Fleka",
+      "": "",
+      "ukupniPrihod": 406757,
+      "profit": 79956,
+      "brojZaposlenih": 12,
+      "id": 7
+    },
+    {
+      "firma": "Amplitudo",
+      "": "",
+      "ukupniPrihod": 314925,
+      "profit": 25652,
+      "brojZaposlenih": 5,
+      "id": 8
+    },
+    {
+      "firma": "International Bridge",
+      "": "",
+      "ukupniPrihod": 87044,
+      "profit": 11235,
+      "brojZaposlenih": 8,
+      "id": 9
+    },
+    {
+      "firma": "Coinis",
+      "": "",
+      "ukupniPrihod": 36300,
+      "profit": 211,
+      "brojZaposlenih": 7,
+      "id": 10
+    }
+  ],
+  "2016": [
+    {
+      "firma": "Domen",
+      "": "",
+      "ukupniPrihod": 7002275,
+      "profit": 2325318,
+      "brojZaposlenih": 5,
+      "id": 2
+    },
+    {
+      "firma": "Media Monkeys",
+      "": "",
+      "ukupniPrihod": 1485143,
+      "profit": 476940,
+      "brojZaposlenih": 10,
+      "id": 3
+    },
+    {
+      "firma": "Logate",
+      "": "",
+      "ukupniPrihod": 995786,
+      "profit": 164932,
+      "brojZaposlenih": 22,
+      "id": 4
+    },
+    {
+      "firma": "CoreIT",
+      "": "",
+      "ukupniPrihod": 793779,
+      "profit": 132535,
+      "brojZaposlenih": 10,
+      "id": 5
+    },
+    {
+      "firma": "Bild",
+      "": "",
+      "ukupniPrihod": 667568,
+      "profit": 70628,
+      "brojZaposlenih": 36,
+      "id": 6
+    },
+    {
+      "firma": "Fleka",
+      "": "",
+      "ukupniPrihod": 412460,
+      "profit": 915,
+      "brojZaposlenih": 13,
+      "id": 7
+    },
+    {
+      "firma": "Amplitudo",
+      "": "",
+      "ukupniPrihod": 392168,
+      "profit": 70451,
+      "brojZaposlenih": 8,
+      "id": 8
+    },
+    {
+      "firma": "International Bridge",
+      "": "",
+      "ukupniPrihod": 188139,
+      "profit": 1284,
+      "brojZaposlenih": 12,
+      "id": 9
+    },
+    {
+      "firma": "Coinis",
+      "": "",
+      "ukupniPrihod": 59646,
+      "profit": 954,
+      "brojZaposlenih": 12,
+      "id": 10
+    }
+  ],
+  "2017": [
+    {
+      "firma": "Domen",
+      "": "",
+      "ukupniPrihod": 6488857,
+      "profit": 2262989,
+      "brojZaposlenih": 5,
+      "id": 2
+    },
+    {
+      "firma": "CoreIT",
+      "": "",
+      "ukupniPrihod": 2767386,
+      "profit": 479359,
+      "brojZaposlenih": 11,
+      "id": 3
+    },
+    {
+      "firma": "Media Monkeys",
+      "": "",
+      "ukupniPrihod": 2518970,
+      "profit": 801718,
+      "brojZaposlenih": 15,
+      "id": 4
+    },
+    {
+      "firma": "Bild",
+      "": "",
+      "ukupniPrihod": 1053443,
+      "profit": 280851,
+      "brojZaposlenih": 36,
+      "id": 5
+    },
+    {
+      "firma": "Logate",
+      "": "",
+      "ukupniPrihod": 828183,
+      "profit": 103759,
+      "brojZaposlenih": 21,
+      "id": 6
+    },
+    {
+      "firma": "Amplitudo",
+      "": "",
+      "ukupniPrihod": 467399,
+      "profit": 75642,
+      "brojZaposlenih": 15,
+      "id": 7
+    },
+    {
+      "firma": "Fleka",
+      "": "",
+      "ukupniPrihod": 458269,
+      "profit": 8309,
+      "brojZaposlenih": 14,
+      "id": 8
+    },
+    {
+      "firma": "International Bridge",
+      "": "",
+      "ukupniPrihod": 327684,
+      "profit": 5471,
+      "brojZaposlenih": 16,
+      "id": 9
+    },
+    {
+      "firma": "Data Design",
+      "": "",
+      "ukupniPrihod": 186563,
+      "profit": 8891,
+      "brojZaposlenih": 6,
+      "id": 10
+    },
+    {
+      "firma": "Coinis",
+      "": "",
+      "ukupniPrihod": 74871,
+      "profit": 18469,
+      "brojZaposlenih": 11,
+      "id": 11
+    }
+  ],
+  "2018": [
+    {
+      "firma": "Domen",
+      "": "",
+      "ukupniPrihod": 6363283,
+      "profit": 2349702,
+      "brojZaposlenih": 6,
+      "id": 2
+    },
+    {
+      "firma": "Coinis",
+      "": "",
+      "ukupniPrihod": 3875121,
+      "profit": 541162,
+      "brojZaposlenih": 10,
+      "id": 3
+    },
+    {
+      "firma": "CoreIT",
+      "": "",
+      "ukupniPrihod": 2076979,
+      "profit": 911430,
+      "brojZaposlenih": 14,
+      "id": 4
+    },
+    {
+      "firma": "Media Monkeys",
+      "": "",
+      "ukupniPrihod": 1167709,
+      "profit": 12194,
+      "brojZaposlenih": 14,
+      "id": 5
+    },
+    {
+      "firma": "Logate",
+      "": "",
+      "ukupniPrihod": 1108094,
+      "profit": 8582,
+      "brojZaposlenih": 40,
+      "id": 6
+    },
+    {
+      "firma": "Bild Studio",
+      "": "",
+      "ukupniPrihod": 1041493,
+      "profit": 185468,
+      "brojZaposlenih": 46,
+      "id": 7
+    },
+    {
+      "firma": "Datum Solutions",
+      "": "",
+      "ukupniPrihod": 660781,
+      "profit": 36739,
+      "brojZaposlenih": 22,
+      "id": 8
+    },
+    {
+      "firma": "Amplitudo",
+      "": "",
+      "ukupniPrihod": 585905,
+      "profit": 54138,
+      "brojZaposlenih": 21,
+      "id": 9
+    },
+    {
+      "firma": "Poslovna Inteligencija",
+      "": "",
+      "ukupniPrihod": 511396,
+      "profit": 86746,
+      "brojZaposlenih": 14,
+      "id": 10
+    },
+    {
+      "firma": "Datalab",
+      "": "",
+      "ukupniPrihod": 489072,
+      "profit": 110400,
+      "brojZaposlenih": 7,
+      "id": 11
+    },
+    {
+      "firma": "International Bridge",
+      "": "",
+      "ukupniPrihod": 452415,
+      "profit": 1557,
+      "brojZaposlenih": 25,
+      "id": 12
+    },
+    {
+      "firma": "Fleka",
+      "": "",
+      "ukupniPrihod": 420222,
+      "profit": 12952,
+      "brojZaposlenih": 15,
+      "id": 13
+    },
+    {
+      "firma": "Omnitech",
+      "": "",
+      "ukupniPrihod": 313717,
+      "profit": 34842,
+      "brojZaposlenih": 11,
+      "id": 14
+    },
+    {
+      "firma": "Data Design",
+      "": "",
+      "ukupniPrihod": 291329,
+      "profit": 289,
+      "brojZaposlenih": 6,
+      "id": 15
+    },
+    {
+      "firma": "SynergySuite",
+      "": "",
+      "ukupniPrihod": 185000,
+      "profit": 29058,
+      "brojZaposlenih": "",
+      "id": 16
+    },
+    {
+      "firma": "Alicorn",
+      "": "",
+      "ukupniPrihod": 104246,
+      "profit": 1511,
+      "brojZaposlenih": 6,
+      "id": 17
+    },
+    {
+      "firma": "Rubik",
+      "": "",
+      "ukupniPrihod": 86469,
+      "profit": 6952,
+      "brojZaposlenih": 6,
+      "id": 18
+    },
+    {
+      "firma": "Codingo",
+      "": "",
+      "ukupniPrihod": 42029,
+      "profit": 3236,
+      "brojZaposlenih": 6,
+      "id": 19
+    }
+  ],
+  "2019": [
+    {
+      "firma": "Coinis",
+      "": "",
+      "ukupniPrihod": 7963422,
+      "profit": 217328,
+      "brojZaposlenih": 26,
+      "id": 2
+    },
+    {
+      "firma": "Domen",
+      "": "",
+      "ukupniPrihod": 6705798,
+      "profit": 2258294,
+      "brojZaposlenih": 6,
+      "id": 3
+    },
+    {
+      "firma": "CoreIT",
+      "": "",
+      "ukupniPrihod": 2169929,
+      "profit": 543418,
+      "brojZaposlenih": 17,
+      "id": 4
+    },
+    {
+      "firma": "Media Monkeys",
+      "": "",
+      "ukupniPrihod": 1464831,
+      "profit": 1422,
+      "brojZaposlenih": 9,
+      "id": 5
+    },
+    {
+      "firma": "Logate",
+      "": "",
+      "ukupniPrihod": 1315542,
+      "profit": 49718,
+      "brojZaposlenih": 52,
+      "id": 6
+    },
+    {
+      "firma": "Bild Studio",
+      "": "",
+      "ukupniPrihod": 1216834,
+      "profit": 224582,
+      "brojZaposlenih": 54,
+      "id": 7
+    },
+    {
+      "firma": "Amplitudo",
+      "": "",
+      "ukupniPrihod": 923065,
+      "profit": 61961,
+      "brojZaposlenih": 40,
+      "id": 8
+    },
+    {
+      "firma": "Datum Solutions",
+      "": "",
+      "ukupniPrihod": 894837,
+      "profit": 122034,
+      "brojZaposlenih": 23,
+      "id": 9
+    },
+    {
+      "firma": "Poslovna Inteligencija",
+      "": "",
+      "ukupniPrihod": 646041,
+      "profit": 135024,
+      "brojZaposlenih": 17,
+      "id": 10
+    },
+    {
+      "firma": "International Bridge",
+      "": "",
+      "ukupniPrihod": 511775,
+      "profit": 5630,
+      "brojZaposlenih": 26,
+      "id": 11
+    },
+    {
+      "firma": "Fleka",
+      "": "",
+      "ukupniPrihod": 485777,
+      "profit": 7494,
+      "brojZaposlenih": 14,
+      "id": 12
+    },
+    {
+      "firma": "Datalab",
+      "": "",
+      "ukupniPrihod": 459175,
+      "profit": 62845,
+      "brojZaposlenih": 7,
+      "id": 13
+    },
+    {
+      "firma": "Omnitech",
+      "": "",
+      "ukupniPrihod": 416787,
+      "profit": 106,
+      "brojZaposlenih": 16,
+      "id": 14
+    },
+    {
+      "firma": "SynergySuite",
+      "": "",
+      "ukupniPrihod": 365000,
+      "profit": 11759,
+      "brojZaposlenih": 11,
+      "id": 15
+    },
+    {
+      "firma": "Alicorn",
+      "": "",
+      "ukupniPrihod": 196087,
+      "profit": 59383,
+      "brojZaposlenih": 6,
+      "id": 16
+    },
+    {
+      "firma": "Data Design",
+      "": "",
+      "ukupniPrihod": 158953,
+      "profit": -3010,
+      "brojZaposlenih": 11,
+      "id": 17
+    },
+    {
+      "firma": "Codingo",
+      "": "",
+      "ukupniPrihod": 64761,
+      "profit": 7568,
+      "brojZaposlenih": 6,
+      "id": 18
+    },
+    {
+      "firma": "Uhura Solutions",
+      "": "",
+      "ukupniPrihod": "N/A",
+      "profit": -65606,
+      "brojZaposlenih": 4,
+      "id": 19
+    },
+    {
+      "firma": "Winsoft",
+      "": "",
+      "ukupniPrihod": 167743,
+      "profit": 19227,
+      "brojZaposlenih": 7,
+      "id": 20
+    }
+  ]
+}

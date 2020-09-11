@@ -1,3 +1,11 @@
+# ICT financial statistics in Montenegro
+The data was gathered manually from the public government tax website.
+
+You can verify data here: https://eprijava.tax.gov.me/
+
+All the data is stored in the /public/data/stats.json file.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
