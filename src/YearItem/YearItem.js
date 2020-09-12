@@ -6,10 +6,20 @@ import './YearItem.css'
 
 const {SearchBar} = Search;
 
+const formatter = new Intl.NumberFormat('en-US', {
+    style: 'decimal',
+    currency: 'EUR',
+});
+
+function currencyFormatter(cell, row) {
+    return (
+        <span>{formatter.format(cell)} €</span>
+    );
+}
 const columns = [
     {text: "Name", dataField: "name", sort: true},
-    {text: "Total Income", dataField: "totalIncome", sort: true},
-    {text: "Profit", dataField: "profit", sort: true},
+    {text: "Total Income", dataField: "totalIncome", formatter: currencyFormatter, sort: true},
+    {text: "Profit", dataField: "profit", formatter: currencyFormatter, sort: true},
     {text: "Employees", dataField: "employeeCount", sort: true},
 ]
 
