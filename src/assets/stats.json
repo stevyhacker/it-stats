@@ -4,7 +4,6 @@
     "companyList": [
       {
         "name": "Coinis",
-        "": "",
         "totalIncome": 7963422,
         "profit": 217328,
         "employeeCount": 26,
@@ -12,7 +11,6 @@
       },
       {
         "name": "Domen",
-        "": "",
         "totalIncome": 6705798,
         "profit": 2258294,
         "employeeCount": 6,
@@ -20,7 +18,6 @@
       },
       {
         "name": "CoreIT",
-        "": "",
         "totalIncome": 2169929,
         "profit": 543418,
         "employeeCount": 17,
@@ -28,7 +25,6 @@
       },
       {
         "name": "Media Monkeys",
-        "": "",
         "totalIncome": 1464831,
         "profit": 1422,
         "employeeCount": 9,
@@ -36,7 +32,6 @@
       },
       {
         "name": "Logate",
-        "": "",
         "totalIncome": 1315542,
         "profit": 49718,
         "employeeCount": 52,
@@ -44,7 +39,6 @@
       },
       {
         "name": "Bild Studio",
-        "": "",
         "totalIncome": 1216834,
         "profit": 224582,
         "employeeCount": 54,
@@ -52,7 +46,6 @@
       },
       {
         "name": "Amplitudo",
-        "": "",
         "totalIncome": 923065,
         "profit": 61961,
         "employeeCount": 40,
@@ -60,7 +53,6 @@
       },
       {
         "name": "Datum Solutions",
-        "": "",
         "totalIncome": 894837,
         "profit": 122034,
         "employeeCount": 23,
@@ -68,7 +60,6 @@
       },
       {
         "name": "Poslovna Inteligencija",
-        "": "",
         "totalIncome": 646041,
         "profit": 135024,
         "employeeCount": 17,
@@ -76,7 +67,6 @@
       },
       {
         "name": "International Bridge",
-        "": "",
         "totalIncome": 511775,
         "profit": 5630,
         "employeeCount": 26,
@@ -84,7 +74,6 @@
       },
       {
         "name": "Fleka",
-        "": "",
         "totalIncome": 485777,
         "profit": 7494,
         "employeeCount": 14,
@@ -92,7 +81,6 @@
       },
       {
         "name": "Datalab",
-        "": "",
         "totalIncome": 459175,
         "profit": 62845,
         "employeeCount": 7,
@@ -100,7 +88,6 @@
       },
       {
         "name": "Omnitech",
-        "": "",
         "totalIncome": 416787,
         "profit": 106,
         "employeeCount": 16,
@@ -108,7 +95,6 @@
       },
       {
         "name": "SynergySuite",
-        "": "",
         "totalIncome": 365000,
         "profit": 11759,
         "employeeCount": 11,
@@ -116,7 +102,6 @@
       },
       {
         "name": "Alicorn",
-        "": "",
         "totalIncome": 196087,
         "profit": 59383,
         "employeeCount": 6,
@@ -124,7 +109,6 @@
       },
       {
         "name": "Data Design",
-        "": "",
         "totalIncome": 158953,
         "profit": -3010,
         "employeeCount": 11,
@@ -132,7 +116,6 @@
       },
       {
         "name": "Codingo",
-        "": "",
         "totalIncome": 64761,
         "profit": 7568,
         "employeeCount": 6,
@@ -140,7 +123,6 @@
       },
       {
         "name": "Uhura Solutions",
-        "": "",
         "totalIncome": "N/A",
         "profit": -65606,
         "employeeCount": 4,
@@ -148,7 +130,6 @@
       },
       {
         "name": "Winsoft",
-        "": "",
         "totalIncome": 167743,
         "profit": 19227,
         "employeeCount": 7,
@@ -161,7 +142,6 @@
     "companyList": [
       {
         "name": "Domen",
-        "": "",
         "totalIncome": 6363283,
         "profit": 2349702,
         "employeeCount": 6,
@@ -169,7 +149,6 @@
       },
       {
         "name": "Coinis",
-        "": "",
         "totalIncome": 3875121,
         "profit": 541162,
         "employeeCount": 10,
@@ -177,7 +156,6 @@
       },
       {
         "name": "CoreIT",
-        "": "",
         "totalIncome": 2076979,
         "profit": 911430,
         "employeeCount": 14,
@@ -185,7 +163,6 @@
       },
       {
         "name": "Media Monkeys",
-        "": "",
         "totalIncome": 1167709,
         "profit": 12194,
         "employeeCount": 14,
@@ -193,7 +170,6 @@
       },
       {
         "name": "Logate",
-        "": "",
         "totalIncome": 1108094,
         "profit": 8582,
         "employeeCount": 40,
@@ -201,7 +177,6 @@
       },
       {
         "name": "Bild Studio",
-        "": "",
         "totalIncome": 1041493,
         "profit": 185468,
         "employeeCount": 46,
@@ -209,7 +184,6 @@
       },
       {
         "name": "Datum Solutions",
-        "": "",
         "totalIncome": 660781,
         "profit": 36739,
         "employeeCount": 22,
@@ -217,7 +191,6 @@
       },
       {
         "name": "Amplitudo",
-        "": "",
         "totalIncome": 585905,
         "profit": 54138,
         "employeeCount": 21,
@@ -225,7 +198,6 @@
       },
       {
         "name": "Poslovna Inteligencija",
-        "": "",
         "totalIncome": 511396,
         "profit": 86746,
         "employeeCount": 14,
@@ -233,7 +205,6 @@
       },
       {
         "name": "Datalab",
-        "": "",
         "totalIncome": 489072,
         "profit": 110400,
         "employeeCount": 7,
@@ -241,7 +212,6 @@
       },
       {
         "name": "International Bridge",
-        "": "",
         "totalIncome": 452415,
         "profit": 1557,
         "employeeCount": 25,
@@ -249,7 +219,6 @@
       },
       {
         "name": "Fleka",
-        "": "",
         "totalIncome": 420222,
         "profit": 12952,
         "employeeCount": 15,
@@ -257,7 +226,6 @@
       },
       {
         "name": "Omnitech",
-        "": "",
         "totalIncome": 313717,
         "profit": 34842,
         "employeeCount": 11,
@@ -265,7 +233,6 @@
       },
       {
         "name": "Data Design",
-        "": "",
         "totalIncome": 291329,
         "profit": 289,
         "employeeCount": 6,
@@ -273,7 +240,6 @@
       },
       {
         "name": "SynergySuite",
-        "": "",
         "totalIncome": 185000,
         "profit": 29058,
         "employeeCount": "",
@@ -281,7 +247,6 @@
       },
       {
         "name": "Alicorn",
-        "": "",
         "totalIncome": 104246,
         "profit": 1511,
         "employeeCount": 6,
@@ -289,7 +254,6 @@
       },
       {
         "name": "Rubik",
-        "": "",
         "totalIncome": 86469,
         "profit": 6952,
         "employeeCount": 6,
@@ -297,7 +261,6 @@
       },
       {
         "name": "Codingo",
-        "": "",
         "totalIncome": 42029,
         "profit": 3236,
         "employeeCount": 6,
@@ -310,7 +273,6 @@
     "companyList": [
       {
         "name": "Domen",
-        "": "",
         "totalIncome": 6488857,
         "profit": 2262989,
         "employeeCount": 5,
@@ -318,7 +280,6 @@
       },
       {
         "name": "CoreIT",
-        "": "",
         "totalIncome": 2767386,
         "profit": 479359,
         "employeeCount": 11,
@@ -326,7 +287,6 @@
       },
       {
         "name": "Media Monkeys",
-        "": "",
         "totalIncome": 2518970,
         "profit": 801718,
         "employeeCount": 15,
@@ -334,7 +294,6 @@
       },
       {
         "name": "Bild",
-        "": "",
         "totalIncome": 1053443,
         "profit": 280851,
         "employeeCount": 36,
@@ -342,7 +301,6 @@
       },
       {
         "name": "Logate",
-        "": "",
         "totalIncome": 828183,
         "profit": 103759,
         "employeeCount": 21,
@@ -350,7 +308,6 @@
       },
       {
         "name": "Amplitudo",
-        "": "",
         "totalIncome": 467399,
         "profit": 75642,
         "employeeCount": 15,
@@ -358,7 +315,6 @@
       },
       {
         "name": "Fleka",
-        "": "",
         "totalIncome": 458269,
         "profit": 8309,
         "employeeCount": 14,
@@ -366,7 +322,6 @@
       },
       {
         "name": "International Bridge",
-        "": "",
         "totalIncome": 327684,
         "profit": 5471,
         "employeeCount": 16,
@@ -374,7 +329,6 @@
       },
       {
         "name": "Data Design",
-        "": "",
         "totalIncome": 186563,
         "profit": 8891,
         "employeeCount": 6,
@@ -382,7 +336,6 @@
       },
       {
         "name": "Coinis",
-        "": "",
         "totalIncome": 74871,
         "profit": 18469,
         "employeeCount": 11,
@@ -395,7 +348,6 @@
     "companyList": [
       {
         "name": "Domen",
-        "": "",
         "totalIncome": 7002275,
         "profit": 2325318,
         "employeeCount": 5,
@@ -403,7 +355,6 @@
       },
       {
         "name": "Media Monkeys",
-        "": "",
         "totalIncome": 1485143,
         "profit": 476940,
         "employeeCount": 10,
@@ -411,7 +362,6 @@
       },
       {
         "name": "Logate",
-        "": "",
         "totalIncome": 995786,
         "profit": 164932,
         "employeeCount": 22,
@@ -419,7 +369,6 @@
       },
       {
         "name": "CoreIT",
-        "": "",
         "totalIncome": 793779,
         "profit": 132535,
         "employeeCount": 10,
@@ -427,7 +376,6 @@
       },
       {
         "name": "Bild",
-        "": "",
         "totalIncome": 667568,
         "profit": 70628,
         "employeeCount": 36,
@@ -435,7 +383,6 @@
       },
       {
         "name": "Fleka",
-        "": "",
         "totalIncome": 412460,
         "profit": 915,
         "employeeCount": 13,
@@ -443,7 +390,6 @@
       },
       {
         "name": "Amplitudo",
-        "": "",
         "totalIncome": 392168,
         "profit": 70451,
         "employeeCount": 8,
@@ -451,7 +397,6 @@
       },
       {
         "name": "International Bridge",
-        "": "",
         "totalIncome": 188139,
         "profit": 1284,
         "employeeCount": 12,
@@ -459,7 +404,6 @@
       },
       {
         "name": "Coinis",
-        "": "",
         "totalIncome": 59646,
         "profit": 954,
         "employeeCount": 12,
@@ -472,7 +416,6 @@
     "companyList": [
       {
         "name": "Domen",
-        "": "",
         "totalIncome": 6111440,
         "profit": 2003427,
         "employeeCount": 5,
@@ -480,7 +423,6 @@
       },
       {
         "name": "CoreIT",
-        "": "",
         "totalIncome": 1744396,
         "profit": 384286,
         "employeeCount": 10,
@@ -488,7 +430,6 @@
       },
       {
         "name": "Media Monkeys",
-        "": "",
         "totalIncome": 1027100,
         "profit": 521543,
         "employeeCount": 10,
@@ -496,7 +437,6 @@
       },
       {
         "name": "Bild",
-        "": "",
         "totalIncome": 471062,
         "profit": 122273,
         "employeeCount": 18,
@@ -504,7 +444,6 @@
       },
       {
         "name": "Logate",
-        "": "",
         "totalIncome": 434573,
         "profit": 93408,
         "employeeCount": 12,
@@ -512,7 +451,6 @@
       },
       {
         "name": "Fleka",
-        "": "",
         "totalIncome": 406757,
         "profit": 79956,
         "employeeCount": 12,
@@ -520,7 +458,6 @@
       },
       {
         "name": "Amplitudo",
-        "": "",
         "totalIncome": 314925,
         "profit": 25652,
         "employeeCount": 5,
@@ -528,7 +465,6 @@
       },
       {
         "name": "International Bridge",
-        "": "",
         "totalIncome": 87044,
         "profit": 11235,
         "employeeCount": 8,
@@ -536,7 +472,6 @@
       },
       {
         "name": "Coinis",
-        "": "",
         "totalIncome": 36300,
         "profit": 211,
         "employeeCount": 7,

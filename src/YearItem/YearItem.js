@@ -2,6 +2,7 @@ import React from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit';
 import './YearItem.css'
+import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
 
 const {SearchBar} = Search;
 
@@ -17,10 +18,25 @@ function currencyFormatter(cell, row) {
 }
 
 const columns = [
-    {text: "Name", dataField: "name", sort: true},
-    {text: "Total Income", dataField: "totalIncome", formatter: currencyFormatter, sort: true},
-    {text: "Profit", dataField: "profit", formatter: currencyFormatter, sort: true},
-    {text: "Employees", dataField: "employeeCount", sort: true}
+    {
+        text: "Name", dataField: "name", sort: true, style: {
+            fontWeight: 'bold',
+            fontSize: '1.25rem'
+        }
+    },
+    {
+        text: "Total Income",
+        dataField: "totalIncome",
+        formatter: currencyFormatter,
+        sort: true,
+        style: {fontSize: '1.1rem'}
+    },
+    {
+        text: "Profit", dataField: "profit", formatter: currencyFormatter, sort: true, style: {fontSize: '1.1rem'}
+    },
+    {
+        text: "Employees", dataField: "employeeCount", sort: true, style: {fontSize: '1.1rem'}
+    }
 ]
 
 function YearItem(props) {
@@ -28,7 +44,7 @@ function YearItem(props) {
     return (
         <div>
             <h4 className="text-white text-center"> {props.item.year}</h4>
-
+            <ChartTopFiveByEmployees companyList={props.item.companyList}/>
             <ToolkitProvider
                 keyField="id"
                 data={props.item.companyList}
