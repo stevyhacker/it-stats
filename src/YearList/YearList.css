@@ -1,5 +1,6 @@
 .yearList {
     background: #342c63;
-    padding: 5vh;
+    padding: 2vh;
     justify-content: center;
+    min-width: 600px;
 }
