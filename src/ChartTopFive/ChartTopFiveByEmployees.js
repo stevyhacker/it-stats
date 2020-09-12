@@ -25,13 +25,15 @@ function ChartTopFiveByEmployees(props) {
         }]
     };
 
-    props.companyList.sort(function(a, b) {
+    const companyList = Array.from(props.companyList)
+
+    companyList.sort(function(a, b) {
         if (a.employeeCount < b.employeeCount) return 1;
         if (a.employeeCount > b.employeeCount) return -1;
         return 0;
     });
 
-    const topFive = props.companyList.slice(0, 5)
+    const topFive = companyList.slice(0, 5)
 
     topFive.forEach(company => {
         data.labels.push(company.name);

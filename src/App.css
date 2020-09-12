@@ -2,5 +2,7 @@
   background: #342c63;
   padding: 2vh;
   justify-content: center;
+  width: 100%;
+  display: flex;
   min-width: 600px;
 }

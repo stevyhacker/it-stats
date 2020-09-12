@@ -1,3 +1,13 @@
 .searchBar {
     text-align: end;
 }
+
+.yearItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.yearItem p {
+    padding: 1vh;
+}
