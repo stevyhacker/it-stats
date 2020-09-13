@@ -4,6 +4,7 @@ import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit';
 import './YearItem.css'
 import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
 import {Collapse} from 'react-collapse';
+import { useHistory } from "react-router-dom";
 
 const {SearchBar} = Search;
 
@@ -47,6 +48,17 @@ function YearItem(props) {
 
     let [isOpened, toggleOpened] = useState(initiallyOpened);
 
+    const history = useHistory();
+
+    const rowEvents = {
+        onClick: (e, row, rowIndex) => {
+            history.push("/company/" + row.name);
+            console.log(`clicked on row with index: ${rowIndex}`);
+        },
+        onMouseEnter: (e, row, rowIndex) => {
+            console.log(`enter on row with index: ${rowIndex}`);
+        }
+    };
 
     return (
 
@@ -70,7 +82,7 @@ function YearItem(props) {
                                     <SearchBar {...props.searchProps} />
                                 </div>
                                 <h5 className="text-center text-white-50 ">Sorted by total income</h5>
-                                <BootstrapTable rowClasses={"text-white companyItem"} {...props.baseProps}/>
+                                <BootstrapTable rowEvents={rowEvents} rowClasses={"text-white companyItem"} {...props.baseProps}/>
                             </div>
                         )
                     }

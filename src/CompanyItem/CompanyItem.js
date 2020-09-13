@@ -1,19 +1,30 @@
 import React from 'react';
 import './CompanyItem.css'
+import {useLocation} from 'react-router-dom'
+import statsData from '../assets/stats.json'
+import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
+import {Collapse} from "react-collapse";
+import CompanyCharts from "../CompanyChartByEmployees/CompanyCharts";
 
-const formatter = new Intl.NumberFormat('de-DE', {
-    style: 'decimal',
-    currency: 'EUR',
-});
+function CompanyItem() {
 
-function CompanyItem(props) {
+    let location = useLocation();
+    console.log(location.pathname);
+    let companyData = []
+    statsData.forEach(year =>
+        year.companyList.forEach(company => {
+            if (location.pathname.includes(company.name))
+                companyData.push(company);
+        })
+    )
     return (
-        <tr className="table-active text-white companyItem">
-            <td>{props.item.name}</td>
-            <td>{formatter.format(props.item.totalIncome)} €</td>
-            <td>{formatter.format(props.item.profit)} €</td>
-            <td>{props.item.employeeCount}</td>
-        </tr>
+        <div>
+
+            <h3 className="text-white text-center">Company : {location.pathname.slice(9,location.pathname.length )}</h3>
+
+            <CompanyCharts companyList={companyData}/>
+
+        </div>
     );
 }
 
