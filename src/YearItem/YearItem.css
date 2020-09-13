@@ -11,3 +11,7 @@
 .yearItem p {
     padding: 1vh;
 }
+
+td:hover {
+    background-color: #2258c3;
+}

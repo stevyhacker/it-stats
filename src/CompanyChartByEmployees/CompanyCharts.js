@@ -3,9 +3,42 @@ import {Bar, HorizontalBar} from "react-chartjs-2";
 import {Line} from "react-chartjs-2";
 import './CompanyCharts.css'
 import statsData from "../assets/stats.json";
+import BootstrapTable from "react-bootstrap-table-next";
+import ToolkitProvider from "react-bootstrap-table2-toolkit";
 
+const formatter = new Intl.NumberFormat('en-US', {
+    style: 'decimal',
+    currency: 'EUR',
+});
 
 function CompanyCharts(props) {
+
+    const columns = [
+        {
+            text: "Name", dataField: "name", style: {
+                fontWeight: 'bold',
+                fontSize: '1.25rem'
+            }
+        },
+        {
+            text: "Total Income",
+            dataField: "totalIncome",
+            formatter: currencyFormatter,
+            style: {fontSize: '1.1rem'}
+        },
+        {
+            text: "Profit", dataField: "profit", formatter: currencyFormatter, style: {fontSize: '1.1rem'}
+        },
+        {
+            text: "Employees", dataField: "employeeCount", style: {fontSize: '1.1rem'}
+        }
+    ]
+
+    function currencyFormatter(cell, row) {
+        return (
+            <span>{formatter.format(cell)} €</span>
+        );
+    }
 
     let data = {
         labels: [],
@@ -142,6 +175,14 @@ function CompanyCharts(props) {
                          height={'500'}
                          options={optionsLegend}
                          data={incomeData}/>
+
+                    <BootstrapTable
+                        keyField="id"
+                        data={companyData}
+                        columns={columns}
+                        rowClasses={"text-white companyItem"}
+                    />
+
                 </div>
             </div>
         </div>
