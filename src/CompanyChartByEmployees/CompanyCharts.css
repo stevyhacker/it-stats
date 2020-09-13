@@ -13,9 +13,14 @@
     padding: 5vh;
     margin: 0 auto;
     justify-content: space-around;
-    width: 50vw;
 }
 
 .chart-title {
     margin: 1.5rem 0;
+}
+
+@media screen and (min-width: 768px) {
+    .chart-container {
+        width: 50%;
+    }
 }
