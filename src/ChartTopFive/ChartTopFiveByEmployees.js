@@ -25,9 +25,19 @@ function ChartTopFiveByEmployees(props) {
         }]
     };
 
+    const options = {
+        legend: {
+            labels: {
+                // This more specific font property overrides the global property
+                fontColor: 'white',
+                defaultFontSize: 20
+            }
+        }
+    }
+
     const companyList = Array.from(props.companyList)
 
-    companyList.sort(function(a, b) {
+    companyList.sort(function (a, b) {
         if (a.employeeCount < b.employeeCount) return 1;
         if (a.employeeCount > b.employeeCount) return -1;
         return 0;
@@ -46,6 +56,7 @@ function ChartTopFiveByEmployees(props) {
                 <h5 className="text-center text-white-50 ">Top 5 companies by number of employees</h5>
                 <Pie width={200}
                      height={60}
+                     options={options}
                      data={data}/>
             </div>
         </div>

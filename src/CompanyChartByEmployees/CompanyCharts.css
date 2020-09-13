@@ -9,8 +9,13 @@
 
 .chart-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 5vh;
-    width: 66vh;
+    margin: 0 auto;
+    justify-content: space-around;
+    width: 50vw;
+}
 
+.chart-title {
+    margin: 1.5rem 0;
 }
