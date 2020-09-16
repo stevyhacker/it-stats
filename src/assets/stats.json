@@ -17,6 +17,13 @@
         "id": 3
       },
       {
+        "name": "Kodio",
+        "totalIncome": 5657081,
+        "profit": 346353,
+        "employeeCount": 16,
+        "id": 21
+      },
+      {
         "name": "CoreIT",
         "totalIncome": 2169929,
         "profit": 543418,
@@ -134,13 +141,6 @@
         "profit": 19227,
         "employeeCount": 7,
         "id": 20
-      },
-      {
-        "name": "Kodio",
-        "totalIncome": 5657081,
-        "profit": 346353,
-        "employeeCount": 16,
-        "id": 21
       }
     ]
   },
@@ -160,6 +160,13 @@
         "profit": 541162,
         "employeeCount": 10,
         "id": 3
+      },
+      {
+        "name": "Kodio",
+        "totalIncome": 2059742,
+        "profit": 46717,
+        "employeeCount": 3,
+        "id": 21
       },
       {
         "name": "CoreIT",
@@ -272,13 +279,6 @@
         "profit": 3236,
         "employeeCount": 6,
         "id": 19
-      },
-      {
-        "name": "Kodio",
-        "totalIncome": 2059742,
-        "profit": 46717,
-        "employeeCount": 3,
-        "id": 21
       }
     ]
   },
