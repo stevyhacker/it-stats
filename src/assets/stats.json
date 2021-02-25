@@ -141,6 +141,20 @@
         "profit": 19227,
         "employeeCount": 7,
         "id": 20
+      },
+      {
+        "name": "Codeus",
+        "totalIncome": 131904,
+        "profit": 41568,
+        "employeeCount": 12,
+        "id": 21
+      },
+      {
+        "name": "Digital Control",
+        "totalIncome": 35237,
+        "profit": 1767,
+        "employeeCount": 5,
+        "id": 21
       }
     ]
   },
@@ -279,6 +293,13 @@
         "profit": 3236,
         "employeeCount": 6,
         "id": 19
+      },
+      {
+        "name": "Codeus",
+        "totalIncome": 45303,
+        "profit": 399,
+        "employeeCount": 7,
+        "id": 21
       }
     ]
   },
@@ -354,6 +375,13 @@
         "profit": 18469,
         "employeeCount": 11,
         "id": 11
+      },
+      {
+        "name": "Codeus",
+        "totalIncome": 10700,
+        "profit": -1262,
+        "employeeCount": 5,
+        "id": 21
       }
     ]
   },
