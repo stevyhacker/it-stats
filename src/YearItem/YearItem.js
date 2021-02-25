@@ -45,7 +45,8 @@ const columns = [
         style: {fontSize: '1.1rem'}
     },
     {
-        text: "Profit", dataField: "profit", formatter: currencyFormatter, sort: true,
+        text: "Profit", dataField: "profit",
+        formatter: currencyFormatter, sort: true,
         headerStyle: {
           color: '#c4c0c0',
           fontSize: '1rem',
@@ -63,6 +64,12 @@ const columns = [
         style: {fontSize: '1.1rem'}
     }
 ]
+
+const defaultSorting = [{
+  dataField: 'totalIncome',
+  order: 'desc'
+}];
+
 
 function YearItem(props) {
 
@@ -105,7 +112,10 @@ function YearItem(props) {
                                     <SearchBar {...props.searchProps} />
                                 </div>
                                 <h5 className="text-center text-white-50 ">Companies sorted by total income</h5>
-                                <BootstrapTable rowEvents={rowEvents} rowClasses={"text-white companyItem"} {...props.baseProps}/>
+                                <BootstrapTable
+                                  defaultSorted={defaultSorting}
+                                  rowEvents={rowEvents}
+                                  rowClasses={"text-white companyItem"} {...props.baseProps}/>
                             </div>
                         )
                     }

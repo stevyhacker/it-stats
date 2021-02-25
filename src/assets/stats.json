@@ -130,7 +130,7 @@
       },
       {
         "name": "Uhura Solutions",
-        "totalIncome": "N/A",
+        "totalIncome": "0",
         "profit": -65606,
         "employeeCount": 4,
         "id": 19
@@ -162,6 +162,13 @@
         "profit": -2490,
         "employeeCount": 9,
         "id": 24
+      },
+      {
+        "name": "Softing",
+        "totalIncome": 100832,
+        "profit": 14889,
+        "employeeCount": 1,
+        "id": 25
       }
     ]
   },
