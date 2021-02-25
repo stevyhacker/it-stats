@@ -147,21 +147,21 @@
         "totalIncome": 131904,
         "profit": 41568,
         "employeeCount": 12,
-        "id": 21
+        "id": 22
       },
       {
         "name": "Digital Control",
         "totalIncome": 35237,
         "profit": 1767,
         "employeeCount": 5,
-        "id": 22
+        "id": 23
       },
       {
         "name": "Ridgemax",
         "totalIncome": 104570,
         "profit": -2490,
         "employeeCount": 9,
-        "id": 23
+        "id": 24
       }
     ]
   },
@@ -306,14 +306,14 @@
         "totalIncome": 45303,
         "profit": 399,
         "employeeCount": 7,
-        "id": 21
+        "id": 22
       },
       {
         "name": "Ridgemax",
         "totalIncome": 43258,
         "profit": -23793,
         "employeeCount": 7,
-        "id": 23
+        "id": 24
       }
     ]
   },
@@ -395,7 +395,7 @@
         "totalIncome": 10700,
         "profit": -1262,
         "employeeCount": 5,
-        "id": 21
+        "id": 22
       }
     ]
   },
