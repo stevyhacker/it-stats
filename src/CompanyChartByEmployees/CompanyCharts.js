@@ -90,7 +90,7 @@ function CompanyCharts(props) {
             display: false,
             chart: {
                 defaultFontSize: 30,
-                fontColor: 'white'
+                fontColor: '#fff'
             }
         },
         scales: {

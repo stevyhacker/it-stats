@@ -9,7 +9,11 @@
 }
 
 .yearItem p {
-    padding: 1vh;
+    padding: 1.20vh;
+    font-size: 1.5rem;
+    font-family: Nunito Sans, sans-serif;
+    font-weight: bold;
+    font-style: oblique;
 }
 
 td:hover {

@@ -6,6 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.css';
 import './assets/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import 'typeface-nunito'
+import 'typeface-nunito-sans'
+import 'typeface-montserrat'
 
 ReactDOM.render(
   <React.StrictMode>

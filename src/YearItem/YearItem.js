@@ -21,9 +21,15 @@ function currencyFormatter(cell, row) {
 
 const columns = [
     {
-        text: "Name", dataField: "name", sort: true, style: {
+        text: "Name", dataField: "name", sort: true,
+        headerStyle: {
+          color: '#c4c0c0',
+          backgroundColor: '#422966',
+          fontSize: '1rem',
+        },
+        style: {
             fontWeight: 'bold',
-            fontSize: '1.25rem'
+            fontSize: '1.25rem',
         }
     },
     {
@@ -31,13 +37,30 @@ const columns = [
         dataField: "totalIncome",
         formatter: currencyFormatter,
         sort: true,
+        headerStyle: {
+          color: '#c4c0c0',
+          fontSize: '1rem',
+          backgroundColor: '#48316e',
+        },
         style: {fontSize: '1.1rem'}
     },
     {
-        text: "Profit", dataField: "profit", formatter: currencyFormatter, sort: true, style: {fontSize: '1.1rem'}
+        text: "Profit", dataField: "profit", formatter: currencyFormatter, sort: true,
+        headerStyle: {
+          color: '#c4c0c0',
+          fontSize: '1rem',
+          backgroundColor: '#422966',
+        },
+        style: {fontSize: '1.1rem'}
     },
     {
-        text: "Employees", dataField: "employeeCount", sort: true, style: {fontSize: '1.1rem'}
+        text: "Employees", dataField: "employeeCount", sort: true,
+        headerStyle: {
+          color: '#c4c0c0',
+          fontSize: '1rem',
+          backgroundColor: '#48316e',
+        },
+        style: {fontSize: '1.1rem'}
     }
 ]
 

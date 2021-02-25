@@ -14,7 +14,7 @@ function App() {
         <Router>
             <div className="app">
                 <Link to={"/"}>
-                    <h3 className="text-center font-weight-bolder text-white ">IT Montenegro - Stats by Year</h3>
+                    <h3 className="text-center app-title ">IT Montenegro - Stats by Year</h3>
                 </Link>
                 <br/>
                 <Switch>

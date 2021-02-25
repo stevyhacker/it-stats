@@ -22,3 +22,9 @@
   font-size: large;
   color: white;
 }
+
+.app-title {
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  color: #dedede;
+}
