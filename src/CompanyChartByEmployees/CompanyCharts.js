@@ -18,19 +18,35 @@ function CompanyCharts(props) {
             text: "Name", dataField: "name", style: {
                 fontWeight: 'bold',
                 fontSize: '1.25rem'
+            },
+            headerStyle: {
+              color: '#c4c0c0',
+              backgroundColor: '#422966',
             }
         },
         {
             text: "Total Income",
             dataField: "totalIncome",
             formatter: currencyFormatter,
-            style: {fontSize: '1.1rem'}
+            style: {fontSize: '1.1rem'},
+            headerStyle: {
+              color: '#c4c0c0',
+              backgroundColor: '#48316e',
+            },
         },
         {
-            text: "Profit", dataField: "profit", formatter: currencyFormatter, style: {fontSize: '1.1rem'}
+            text: "Profit", dataField: "profit", formatter: currencyFormatter, style: {fontSize: '1.1rem'},
+            headerStyle: {
+              color: '#c4c0c0',
+              backgroundColor: '#422966',
+            }
         },
         {
-            text: "Employees", dataField: "employeeCount", style: {fontSize: '1.1rem'}
+            text: "Employees", dataField: "employeeCount", style: {fontSize: '1.1rem'},
+            headerStyle: {
+              color: '#c4c0c0',
+              backgroundColor: '#48316e',
+            }
         }
     ]
 
