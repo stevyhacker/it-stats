@@ -171,21 +171,21 @@ function CompanyCharts(props) {
     return (
         <div>
             <div className="chart-list">
-                <h5 className="text-center chart-title text-white-50 ">Number of employees per year</h5>
+                <h5 className="text-center chart-title ">Number of employees per year</h5>
                 <div className="chart-container">
                     <Bar width={'100'}
                          height={'50'}
                          options={options}
                          data={data}/>
 
-                    <h5 className="text-center chart-title text-white-50 ">Profit per year</h5>
+                    <h5 className="text-center chart-title ">Profit per year</h5>
 
                     <Bar width={'100'}
                          height={'50'}
                          options={optionsLegend}
                          data={profitData}/>
 
-                    <h5 className="text-center chart-title text-white-50 ">Income per year</h5>
+                    <h5 className="text-center chart-title ">Income per year</h5>
 
                     <Bar width={'100'}
                          height={'50'}

@@ -10881,6 +10881,11 @@ typedarray@^0.0.6:
   resolved "https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-anton@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-anton/-/typeface-anton-1.1.13.tgz#ea462d48814a4727df92a68a63f3cee617bd7dcc"
+  integrity sha512-ILraMyK5pEafBMjr9FD2rksYvT4THRDuFcgw4XthtQeMQVphKM87vdxTfxrYRgQRq7SWDJZna1hlZofEbbVXPQ==
+
 typeface-montserrat@^1.1.13:
   version "1.1.13"
   resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-1.1.13.tgz#2a16729c174dd1a8c3fec05a851b7725412606cc"
@@ -10895,6 +10900,11 @@ typeface-nunito@^1.1.13:
   version "1.1.13"
   resolved "https://registry.yarnpkg.com/typeface-nunito/-/typeface-nunito-1.1.13.tgz#a57cbd7ff3e74ed99fe60d3361971c61747d130c"
   integrity sha512-S7tN6pMnJapUxRDNa/RPXtcsxJC0KkBNPFOfGpHCkatVLm+6ltMedgeGtr1lPZsGFXGN890TZmE18bq2pdsmKw==
+
+typeface-roboto-condensed@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-roboto-condensed/-/typeface-roboto-condensed-1.1.13.tgz#db102baa1f032e14805659a6973fe425882d7c01"
+  integrity sha512-ntjupUqs7yAfp0nbcc30AdDV1OWSnlm5z1wPo2Br2yB8UKM/cLD2NP0DJNX5QomAGg9Q87wlkgT4hUxciqdNYw==
 
 typeface-roboto@^1.1.13:
   version "1.1.13"

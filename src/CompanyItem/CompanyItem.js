@@ -11,7 +11,7 @@ function CompanyItem() {
     return (
         <div>
 
-            <h3 className="text-white text-center">Company : {companyName}</h3>
+            <h3 className="text-white text-center company-title">Company : {companyName}</h3>
 
             <CompanyCharts company={companyName}/>
 

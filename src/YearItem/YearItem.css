@@ -19,3 +19,11 @@
 td:hover {
     background-color: #2258c3;
 }
+
+.table-label {
+  color: #c4c0c0;
+  font-weight: bold;
+  padding-bottom: 1vh;
+  font-size: 1.75rem;
+  font-family: Roboto Condensed, sans-serif;
+}

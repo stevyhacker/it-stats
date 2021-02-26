@@ -53,7 +53,7 @@ function ChartTopFiveByEmployees(props) {
     return (
         <div>
             <div>
-                <h5 className="text-center text-white-50 ">Top 5 companies by number of employees</h5>
+                <p className="text-center table-label ">Top 5 companies by number of employees</p>
                 <Pie width={200}
                      height={60}
                      options={options}

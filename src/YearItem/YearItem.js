@@ -111,7 +111,7 @@ function YearItem(props) {
                                 <div className={"searchBar"}>
                                     <SearchBar {...props.searchProps} />
                                 </div>
-                                <h5 className="text-center text-white-50 ">Companies sorted by total income</h5>
+                                <p className="text-center table-label ">Companies sorted by Total Income</p>
                                 <BootstrapTable
                                   defaultSorted={defaultSorting}
                                   rowEvents={rowEvents}

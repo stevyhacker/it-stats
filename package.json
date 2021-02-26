@@ -18,10 +18,12 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "typeface-anton": "^1.1.13",
     "typeface-montserrat": "^1.1.13",
     "typeface-nunito": "^1.1.13",
     "typeface-nunito-sans": "^1.1.13",
-    "typeface-roboto": "^1.1.13"
+    "typeface-roboto": "^1.1.13",
+    "typeface-roboto-condensed": "^1.1.13"
   },
   "scripts": {
     "start": "react-scripts start",

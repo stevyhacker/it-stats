@@ -9,6 +9,8 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 import 'typeface-nunito'
 import 'typeface-nunito-sans'
 import 'typeface-montserrat'
+import 'typeface-anton'
+import 'typeface-roboto-condensed'
 
 ReactDOM.render(
   <React.StrictMode>
