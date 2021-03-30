@@ -62,7 +62,27 @@ const columns = [
           backgroundColor: '#48316e',
         },
         style: {fontSize: '1.1rem'}
-    }
+    },
+    {
+      text: "Average Pay*", dataField: "averagePay",
+      formatter: currencyFormatter, sort: true,
+      headerStyle: {
+        color: '#c4c0c0',
+        fontSize: '1rem',
+        backgroundColor: '#422966',
+      },
+      style: {fontSize: '1.1rem'}
+    },
+  {
+    text: "Net wage costs", dataField: "netPayCosts",
+    formatter: currencyFormatter, sort: true,
+    headerStyle: {
+      color: '#c4c0c0',
+      fontSize: '1rem',
+      backgroundColor: '#422966',
+    },
+    style: {fontSize: '1.1rem'}
+  }
 ]
 
 const defaultSorting = [{
@@ -74,7 +94,11 @@ const defaultSorting = [{
 function YearItem(props) {
 
     let initiallyOpened = false
-    if (props.item.year === '2019') initiallyOpened = true
+    if (props.item.year === '2020') initiallyOpened = true
+    else {
+        columns[4].hidden = true
+        columns[5].hidden = true
+    }
 
     let [isOpened, toggleOpened] = useState(initiallyOpened);
 
@@ -122,7 +146,6 @@ function YearItem(props) {
                 </ToolkitProvider>
             </Collapse>
         </div>
-
     );
 }
 
