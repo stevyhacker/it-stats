@@ -30,7 +30,7 @@ function App() {
                     </Route>
                 </Switch>
                 <footer className="footer text-white-50">
-                    <p>*Average pay is calculated by dividing total net wage costs for the year by the average number of employees and then dividing by 12 months.</p>
+                    <p>*Average pay is an approximation calculated by dividing total net wage costs <br/> for the year by the average number of employees and then dividing by 12 months.</p>
                   <br/>
                   <p className="footer-link">Project and the dataset is open source <a
                         href={"https://github.com/stevyhacker/it-stats"}>@GitHub</a></p>
