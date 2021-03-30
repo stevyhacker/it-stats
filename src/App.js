@@ -8,6 +8,10 @@ import {
     Link
 } from "react-router-dom";
 import CompanyItem from "./CompanyItem/CompanyItem";
+import ReactGA from 'react-ga';
+import RouteTracker from "./RouteTracker";
+
+ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
 function App() {
     return (
@@ -32,6 +36,7 @@ function App() {
                         href={"https://github.com/stevyhacker/it-stats"}>@GitHub</a></p>
                     <p>Suggestions and improvements are welcome in the form of pull requests :)</p>
                 </footer>
+              <RouteTracker/>
             </div>
         </Router>
     );
