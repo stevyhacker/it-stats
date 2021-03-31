@@ -10,6 +10,7 @@ import {
 import CompanyItem from "./CompanyItem/CompanyItem";
 import ReactGA from 'react-ga';
 import RouteTracker from "./RouteTracker";
+import Footer from "./Footer/Footer";
 
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
@@ -32,15 +33,7 @@ function App() {
                         <YearList/>
                     </Route>
                 </Switch>
-                <footer className="footer text-white-50">
-                    <p>*Average pay is an approximation calculated by dividing total net wage costs <br/> for the year by the average number of employees and then dividing by 12 months.</p>
-                  <br/>
-                  <p className="footer-link">Project and the dataset is open source <a
-                        href={"https://github.com/stevyhacker/it-stats"}>@GitHub</a></p>
-                    <p>Suggestions and improvements are welcome in the form of pull requests :)</p>
-                  <p className="footer-link">Made by <a href={"https://github.com/stevyhacker"}>Stevan
-                    Bogosavljević</a></p>
-                </footer>
+                <Footer/>
               <RouteTracker/>
             </div>
         </Router>

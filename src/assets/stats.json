@@ -27,14 +27,6 @@
         "averagePay": 655.92
       },
       {
-        "name": "Media Monkeys",
-        "totalIncome": "",
-        "profit": "",
-        "employeeCount": 9,
-        "netPayCosts": "",
-        "averagePay": 0
-      },
-      {
         "name": "Logate",
         "totalIncome": 1447169,
         "profit": 53019,
@@ -92,11 +84,11 @@
       },
       {
         "name": "Datalab",
-        "totalIncome": "",
-        "profit": "",
-        "employeeCount": 7,
-        "netPayCosts": "",
-        "averagePay": ""
+        "totalIncome": 414260,
+        "profit": 77757,
+        "employeeCount": 8,
+        "netPayCosts": 86769,
+        "averagePay": 903.84
       },
       {
         "name": "Omnitech",
@@ -121,14 +113,6 @@
         "employeeCount": 8,
         "netPayCosts": 64729,
         "averagePay": 674.26
-      },
-      {
-        "name": "Data Design",
-        "totalIncome": "",
-        "profit": "",
-        "employeeCount": 11,
-        "netPayCosts": "",
-        "averagePay": ""
       },
       {
         "name": "Codingo",
@@ -162,6 +146,14 @@
         "netPayCosts": 569224,
         "averagePay": 847.06
       },
+        {
+        "name": "Media Monkeys",
+        "totalIncome": "238898",
+        "profit": "-159",
+        "employeeCount": 5,
+        "netPayCosts": "55863",
+        "averagePay": 931.05
+        },
       {
         "name": "Codeus",
         "totalIncome": 221152,
