@@ -28,7 +28,7 @@
       },
       {
         "name": "Logate",
-        "totalIncome": 1447169,
+        "totalIncome": 1518471,
         "profit": 53019,
         "employeeCount": 52,
         "netPayCosts": 538646,
@@ -36,7 +36,7 @@
       },
       {
         "name": "Bild Studio",
-        "totalIncome": 1202928,
+        "totalIncome": 1219074,
         "profit": 384255,
         "employeeCount": 68,
         "netPayCosts": 322714,
@@ -44,7 +44,7 @@
       },
       {
         "name": "Amplitudo",
-        "totalIncome": 823190,
+        "totalIncome": 1001574,
         "profit": 197036,
         "employeeCount": 62,
         "netPayCosts": 375253,
@@ -76,7 +76,7 @@
       },
       {
         "name": "Fleka",
-        "totalIncome": 543819,
+        "totalIncome": 556339,
         "profit": 122743,
         "employeeCount": 17,
         "netPayCosts": 174223,
