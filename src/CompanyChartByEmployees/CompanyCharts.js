@@ -1,10 +1,8 @@
 import React from 'react';
-import {Bar, HorizontalBar} from "react-chartjs-2";
-import {Line} from "react-chartjs-2";
+import {Bar} from "react-chartjs-2";
 import './CompanyCharts.css'
 import statsData from "../assets/stats.json";
 import BootstrapTable from "react-bootstrap-table-next";
-import ToolkitProvider from "react-bootstrap-table2-toolkit";
 
 const formatter = new Intl.NumberFormat('en-US', {
     style: 'decimal',
@@ -191,15 +189,13 @@ function CompanyCharts(props) {
                          height={'50'}
                          options={optionsLegend}
                          data={incomeData}/>
-
-                    <BootstrapTable
-                        keyField="id"
-                        data={companyData}
-                        columns={columns}
-                        rowClasses={"text-white companyItem"}
-                    />
-
                 </div>
+                <BootstrapTable
+                  keyField="id"
+                  data={companyData}
+                  columns={columns}
+                  rowClasses={"text-white companyItem"}
+                />
             </div>
         </div>
     );

@@ -27,3 +27,7 @@ td:hover {
   font-size: 1.75rem;
   font-family: Roboto Condensed, sans-serif;
 }
+
+.money-label {
+  white-space: nowrap;
+}

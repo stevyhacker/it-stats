@@ -12,11 +12,11 @@
       },
       {
         "name": "Domen",
-        "totalIncome": "",
-        "profit": "",
-        "employeeCount": 6,
-        "netPayCosts": "",
-        "averagePay": 0
+        "totalIncome": 6876998,
+        "profit": 2490817,
+        "employeeCount": 7,
+        "netPayCosts": 219723,
+        "averagePay": 2615.75
       },
       {
         "name": "CoreIT",
@@ -155,12 +155,12 @@
         "averagePay": 640.47
       },
       {
-        "name": "Softing",
-        "totalIncome": "",
-        "profit": "",
-        "employeeCount": 1,
-        "netPayCosts": "",
-        "averagePay": ""
+        "name": "Čikom",
+        "totalIncome": 8705220,
+        "profit": 903221,
+        "employeeCount": 56,
+        "netPayCosts": 569224,
+        "averagePay": 847.06
       },
       {
         "name": "Codeus",
@@ -353,10 +353,10 @@
         "id": 24
       },
       {
-        "name": "Softing",
-        "totalIncome": 100832,
-        "profit": 14889,
-        "employeeCount": 1,
+        "name": "Čikom",
+        "totalIncome": 7856967,
+        "profit": 561678,
+        "employeeCount": 47,
         "id": 25
       }
     ]
