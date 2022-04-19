@@ -91,8 +91,12 @@ const defaultSorting = [{
 function YearItem(props) {
 
     let initiallyOpened = false
-    if (props.item.year === '2020') {
+    if (props.item.year === '2021') {
         initiallyOpened = true
+        columns[4].hidden = false
+        columns[5].hidden = false
+    }
+    else if (props.item.year === '2020') {
         columns[4].hidden = false
         columns[5].hidden = false
     } else {

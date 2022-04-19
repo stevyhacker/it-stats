@@ -1,10 +1,9 @@
 import React from 'react';
 import statsData from '../assets/stats.json'
-import {Pie} from 'react-chartjs-2';
 import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
 
 
-const ChartList = props => {
+function ChartList() {
     return (
         <div>
 
@@ -16,7 +15,7 @@ const ChartList = props => {
 
         </div>
     );
-};
+}
 
 
 export default ChartList;

@@ -1,5 +1,202 @@
 [
     {
+        "year": "2021",
+        "companyList": [
+            {
+                "name": "Coinis",
+                "totalIncome": 45115590,
+                "profit": 2482351,
+                "employeeCount": 47,
+                "netPayCosts": 354158,
+                "averagePay": 627.93
+            },
+            {
+                "name": "Domen",
+                "totalIncome": 7706186,
+                "profit": 2589385,
+                "employeeCount": 7,
+                "netPayCosts": 206522,
+                "averagePay": 2458.59
+            },
+            {
+                "name": "CoreIT",
+                "totalIncome": 3013036,
+                "profit": 1129916,
+                "employeeCount": 32,
+                "netPayCosts": 149821,
+                "averagePay": 390.15
+            },
+            {
+                "name": "Logate",
+                "totalIncome": 1732019,
+                "profit": 245054,
+                "employeeCount": 50,
+                "netPayCosts": 553120,
+                "averagePay": 921.86
+            },
+            {
+                "name": "Bild Studio",
+                "totalIncome": 1696070,
+                "profit": 412725,
+                "employeeCount": 83,
+                "netPayCosts": 603215,
+                "averagePay": 605.63
+            },
+            {
+                "name": "Amplitudo",
+                "totalIncome": 957203,
+                "profit": 44576,
+                "employeeCount": 61,
+                "netPayCosts": 429109,
+                "averagePay": 586.21
+            },
+            {
+                "name": "Datum Solutions",
+                "totalIncome": 1090049,
+                "profit": 67099,
+                "employeeCount": 24,
+                "netPayCosts": 576602,
+                "averagePay": 2002.09
+            },
+            {
+                "name": "Poslovna Inteligencija",
+                "totalIncome": 846523,
+                "profit": 247962,
+                "employeeCount": 21,
+                "netPayCosts": 307806,
+                "averagePay": 1221.45
+            },
+            {
+                "name": "International Bridge",
+                "totalIncome": 746350,
+                "profit": 73879,
+                "employeeCount": 31,
+                "netPayCosts": 392981,
+                "averagePay": 1056.40
+            },
+            {
+                "name": "Fleka",
+                "totalIncome": 379366,
+                "profit": 106984,
+                "employeeCount": 17,
+                "netPayCosts": 63964,
+                "averagePay": 313.54
+            },
+            {
+                "name": "Datalab",
+                "totalIncome": 1108246,
+                "profit": 256559,
+                "employeeCount": 16,
+                "netPayCosts": 198065,
+                "averagePay": 1031.58
+            },
+            {
+                "name": "Omnitech",
+                "totalIncome": 50000,
+                "profit": 0,
+                "employeeCount": 7,
+                "netPayCosts": 64102,
+                "averagePay": 763.11
+            },
+            {
+                "name": "SynergySuite",
+                "totalIncome": 815000,
+                "profit": 9037,
+                "employeeCount": 42,
+                "netPayCosts": 429820,
+                "averagePay": 852.81
+            },
+            {
+                "name": "Alicorn",
+                "totalIncome": 379664,
+                "profit": 140377,
+                "employeeCount": 11,
+                "netPayCosts": 112213,
+                "averagePay": 850.09
+            },
+            {
+                "name": "Codingo",
+                "totalIncome": 52985,
+                "profit": -13600,
+                "employeeCount": 7,
+                "netPayCosts": 38756,
+                "averagePay": 461.38
+            },
+            {
+                "name": "Uhura Solutions",
+                "totalIncome": 0,
+                "profit": -59441,
+                "employeeCount": 7,
+                "netPayCosts": 38126,
+                "averagePay": 453.88
+            },
+            {
+                "name": "Winsoft",
+                "totalIncome": 201415,
+                "profit": 27699,
+                "employeeCount": 7,
+                "netPayCosts": 62601,
+                "averagePay": 745.25
+            },
+            {
+                "name": "Čikom",
+                "totalIncome": 6666343,
+                "profit": 1472458,
+                "employeeCount": 56,
+                "netPayCosts": 703129,
+                "averagePay": 1046.32
+            },
+            {
+                "name": "Media Monkeys",
+                "totalIncome": 71500,
+                "profit": -159,
+                "employeeCount": 3,
+                "netPayCosts": 55863,
+                "averagePay": 726.97
+            },
+            {
+                "name": "Codeus",
+                "totalIncome": 380932,
+                "profit": 162891,
+                "employeeCount": 16,
+                "netPayCosts": 101944,
+                "averagePay": 530.95
+            },
+            {
+                "name": "Digital Control",
+                "totalIncome": 66251,
+                "profit": 10076,
+                "employeeCount": 9,
+                "netPayCosts": 34906,
+                "averagePay": 323.20
+            },
+            {
+                "name": "Ridgemax",
+                "totalIncome": 106949,
+                "profit": 6670,
+                "employeeCount": 10,
+                "netPayCosts": 64750,
+                "averagePay": 539.58
+            },
+            {
+                "name": "Codepixel",
+                "totalIncome": 116695,
+                "profit": 18363,
+                "employeeCount": 8,
+                "netPayCosts": 41694,
+                "averagePay": 434.31
+            },
+            {
+                "name": "Data Design",
+                "totalIncome": 399280,
+                "profit": 42952,
+                "employeeCount": 21,
+                "netPayCosts": 160969,
+                "averagePay": 638.76
+            }
+        ]
+    },
+    {
         "year": "2020",
         "companyList": [
             {
@@ -148,10 +345,10 @@
             },
             {
                 "name": "Media Monkeys",
-                "totalIncome": "238898",
-                "profit": "-159",
+                "totalIncome": 238898,
+                "profit": -159,
                 "employeeCount": 5,
-                "netPayCosts": "55863",
+                "netPayCosts": 55863,
                 "averagePay": 931.05
             },
             {
@@ -177,14 +374,6 @@
                 "employeeCount": 10,
                 "netPayCosts": 66368,
                 "averagePay": 553.06
-            },
-            {
-                "name": "E.C.S.",
-                "totalIncome": 360537,
-                "profit": 41475,
-                "employeeCount": 10,
-                "netPayCosts": 196639,
-                "averagePay": 1638.65
             },
             {
                 "name": "Codepixel",
@@ -374,13 +563,6 @@
                 "profit": 561678,
                 "employeeCount": 47,
                 "id": 25
-            },
-            {
-                "name": "E.C.S.",
-                "totalIncome": 374082,
-                "profit": 49763,
-                "employeeCount": 10,
-                "id": 30
             }
         ]
     },
