@@ -193,6 +193,14 @@
                 "employeeCount": 22,
                 "netPayCosts": 321582,
                 "averagePay": 1218
+            },
+            {
+                "name": "Ooblee",
+                "totalIncome": 0,
+                "profit": 115871,
+                "employeeCount": 13,
+                "netPayCosts": 481217,
+                "averagePay": 3085
             }
         ]
     },
