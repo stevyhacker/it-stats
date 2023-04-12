@@ -96,7 +96,7 @@ function YearItem(props) {
         columns[4].hidden = false
         columns[5].hidden = false
     }
-    else if (props.item.year === '2020') {
+    else if (props.item.year === '2020' || props.item.year === '2021') {
         columns[4].hidden = false
         columns[5].hidden = false
     } else {
