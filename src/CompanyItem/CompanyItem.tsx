@@ -8,14 +8,15 @@ function CompanyItem() {
     let location = useLocation();
     console.log(location.pathname);
     const companyName = location.pathname.slice(9,location.pathname.length )
+    console.log(companyName);
     return (
-        <div>
+        <React.Fragment>
 
             <h3 className="text-white text-center company-title">Company : {companyName}</h3>
 
             <CompanyCharts company={companyName}/>
 
-        </div>
+        </React.Fragment>
     );
 }
 

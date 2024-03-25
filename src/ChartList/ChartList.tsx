@@ -5,15 +5,15 @@ import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
 
 function ChartList() {
     return (
-        <div>
+        <React.Fragment>
 
             <h3 className="text-center font-weight-bolder text-white ">Montenegro IT</h3>
 
             <div>
-                <div> {statsData.map(item => (<ChartTopFiveByEmployees key={item.id} item={item}/>))} </div>
+                <div> {statsData.map((item: { id: any; }) => (<ChartTopFiveByEmployees key={item.id} item={item}/>))} </div>
             </div>
 
-        </div>
+        </React.Fragment>
     );
 }
 

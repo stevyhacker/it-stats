@@ -1,8 +1,11 @@
 import React from 'react';
 import {Pie} from "react-chartjs-2";
+import {ArcElement, Chart} from "chart.js";
+
+Chart.register(ArcElement);
 
 
-function ChartTopFiveByEmployees(props) {
+function ChartTopFiveByEmployees(props: { companyList: Iterable<unknown> | ArrayLike<unknown>; }) {
 
     let data = {
         labels: [],
@@ -22,18 +25,14 @@ function ChartTopFiveByEmployees(props) {
                 '#89ff56',
                 '#ba45bf'
             ]
-        }]
-    };
-
-    const options = {
+        }],
         legend: {
             labels: {
-                // This more specific font property overrides the global property
                 fontColor: 'white',
                 defaultFontSize: 20
             }
         }
-    }
+    };
 
     const companyList = Array.from(props.companyList)
 
@@ -51,15 +50,14 @@ function ChartTopFiveByEmployees(props) {
     })
 
     return (
-        <div>
-            <div>
+        <React.Fragment>
+            <div style={{width: '25%', textAlign: "center", marginLeft: "auto", marginRight: "auto"}}>
                 <p className="text-center table-label ">Top 5 companies by number of employees</p>
                 <Pie width={200}
                      height={60}
-                     options={options}
                      data={data}/>
             </div>
-        </div>
+        </React.Fragment>
     );
 }
 

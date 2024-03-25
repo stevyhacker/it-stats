@@ -3,6 +3,9 @@ import {Bar} from "react-chartjs-2";
 import './CompanyCharts.css'
 import statsData from "../assets/stats.json";
 import BootstrapTable from "react-bootstrap-table-next";
+import {Chart, registerables} from "chart.js";
+
+Chart.register(...registerables);
 
 const formatter = new Intl.NumberFormat('en-US', {
     style: 'decimal',
@@ -18,8 +21,8 @@ function CompanyCharts(props) {
                 fontSize: '1.25rem'
             },
             headerStyle: {
-              color: '#c4c0c0',
-              backgroundColor: '#422966',
+                color: '#c4c0c0',
+                backgroundColor: '#422966',
             }
         },
         {
@@ -28,22 +31,22 @@ function CompanyCharts(props) {
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
             headerStyle: {
-              color: '#c4c0c0',
-              backgroundColor: '#48316e',
+                color: '#c4c0c0',
+                backgroundColor: '#48316e',
             },
         },
         {
             text: "Profit", dataField: "profit", formatter: currencyFormatter, style: {fontSize: '1.1rem'},
             headerStyle: {
-              color: '#c4c0c0',
-              backgroundColor: '#422966',
+                color: '#c4c0c0',
+                backgroundColor: '#422966',
             }
         },
         {
             text: "Employees", dataField: "employeeCount", style: {fontSize: '1.1rem'},
             headerStyle: {
-              color: '#c4c0c0',
-              backgroundColor: '#48316e',
+                color: '#c4c0c0',
+                backgroundColor: '#48316e',
             }
         }
     ]
@@ -66,40 +69,7 @@ function CompanyCharts(props) {
                 '#ba45bf',
                 '#0620a0'
             ]
-        }]
-    };
-
-    let profitData = {
-        labels: [],
-        datasets: [{
-            data: [],
-            backgroundColor: [
-                '#FF6384',
-                '#36A2EB',
-                '#FFCE56',
-                '#89ff56',
-                '#ba45bf',
-                '#0620a0'
-            ]
-        }]
-    };
-
-    let incomeData = {
-        labels: [],
-        datasets: [{
-            data: [],
-            backgroundColor: [
-                '#FF6384',
-                '#36A2EB',
-                '#FFCE56',
-                '#89ff56',
-                '#ba45bf',
-                '#0620a0'
-            ]
-        }]
-    };
-
-    const options = {
+        }],
         legend: {
             display: false,
             chart: {
@@ -122,9 +92,21 @@ function CompanyCharts(props) {
                 }
             }]
         }
-    }
+    };
 
-    const optionsLegend = {
+    let profitData = {
+        labels: [],
+        datasets: [{
+            data: [],
+            backgroundColor: [
+                '#FF6384',
+                '#36A2EB',
+                '#FFCE56',
+                '#89ff56',
+                '#ba45bf',
+                '#0620a0'
+            ]
+        }],
         legend: {
             display: false,
             chart: {
@@ -147,14 +129,52 @@ function CompanyCharts(props) {
                 }
             }]
         }
-    }
+    };
 
+    let incomeData = {
+        labels: [],
+        datasets: [{
+            data: [],
+            backgroundColor: [
+                '#FF6384',
+                '#36A2EB',
+                '#FFCE56',
+                '#89ff56',
+                '#ba45bf',
+                '#0620a0'
+            ]
+        }],
+        legend: {
+            display: false,
+            chart: {
+                defaultFontSize: 30,
+                fontColor: 'white'
+            }
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    min: 0,
+                    fontColor: '#efe6e6'
+                }
+            }],
+            xAxes: [{
+                ticks: {
+                    min: 0,
+                    fontColor: '#efe6e6',
+                    defaultFontStyle: 'Arial'
+                }
+            }]
+        }
+    };
+
+    const companyName = decodeURI(props.company);
     let companyData = []
     let yearly = Array.from(statsData)
     yearly.reverse()
     yearly.forEach(item =>
         item.companyList.forEach(company => {
-            if (props.company === company.name) {
+            if (companyName === company.name) {
                 data.labels.push(item.year);
                 profitData.labels.push(item.year);
                 incomeData.labels.push(item.year);
@@ -167,37 +187,34 @@ function CompanyCharts(props) {
     )
 
     return (
-        <div>
+        <React.Fragment>
             <div className="chart-list">
                 <h5 className="text-center chart-title ">Number of employees per year</h5>
                 <div className="chart-container">
                     <Bar width={'100'}
                          height={'50'}
-                         options={options}
                          data={data}/>
 
                     <h5 className="text-center chart-title ">Profit per year</h5>
 
                     <Bar width={'100'}
                          height={'50'}
-                         options={optionsLegend}
                          data={profitData}/>
 
                     <h5 className="text-center chart-title ">Income per year</h5>
 
                     <Bar width={'100'}
                          height={'50'}
-                         options={optionsLegend}
                          data={incomeData}/>
                 </div>
                 <BootstrapTable
-                  keyField="id"
-                  data={companyData}
-                  columns={columns}
-                  rowClasses={"text-white companyItem"}
+                    keyField="id"
+                    data={companyData}
+                    columns={columns}
+                    rowClasses={"text-white companyItem"}
                 />
             </div>
-        </div>
+        </React.Fragment>
     );
 }
 

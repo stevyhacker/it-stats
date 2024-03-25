@@ -1,11 +1,10 @@
 import React, {useState} from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
-import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit';
+import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
 import './YearItem.css'
 import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
 import {Collapse} from 'react-collapse';
-import {useHistory} from "react-router-dom";
-import {isMobile} from 'react-device-detect';
+import {useNavigate} from "react-router-dom";
 import './ResponsiveTable.css'
 
 const {SearchBar} = Search;
@@ -106,11 +105,11 @@ function YearItem(props) {
 
     let [isOpened, toggleOpened] = useState(initiallyOpened);
 
-    const history = useHistory();
+    const history = useNavigate();
 
     const rowEvents = {
         onClick: (e, row, rowIndex) => {
-            history.push("/company/" + row.name);
+            history("/company/" + row.name);
             console.log(`clicked on row with index: ${rowIndex}`);
         },
         onMouseEnter: (e, row, rowIndex) => {
@@ -120,7 +119,7 @@ function YearItem(props) {
 
     return (
 
-        <div>
+        <React.Fragment>
             <h4 onClick={() => toggleOpened(!isOpened)} className="text-white yearItem">
                 <p className="border"> {props.item.year}</p>
             </h4>
@@ -147,11 +146,10 @@ function YearItem(props) {
                                 rowEvents={rowEvents}
                                 rowClasses={"text-white companyItem"} {...props.baseProps}/>
                         </div>
-                    )
-                    }
+                    )}
                 </ToolkitProvider>
             </Collapse>
-        </div>
+        </React.Fragment>
     );
 }
 

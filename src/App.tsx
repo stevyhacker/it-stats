@@ -2,8 +2,8 @@ import React from 'react';
 import './App.css';
 import YearList from "./YearList/YearList";
 import {
-    BrowserRouter as Router,
-    Switch,
+    BrowserRouter,
+    Routes,
     Route,
     Link
 } from "react-router-dom";
@@ -16,27 +16,25 @@ ReactGA.initialize(process.env.REACT_APP_GA_CODE);
 
 function App() {
 
-  ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.pageview(window.location.pathname + window.location.search);
 
-  return (
-        <Router>
+    return (
+        <BrowserRouter>
             <div className="app">
                 <Link to={"/"}>
                     <h3 className="text-center app-title ">IT Montenegro - Stats by Year</h3>
                 </Link>
                 <br/>
-                <Switch>
-                    <Route path="/company/:name">
-                        <CompanyItem/>
-                    </Route>
-                    <Route path="/">
-                        <YearList/>
-                    </Route>
-                </Switch>
+
+                <Routes>
+                    <Route path="/company/:name" element={<CompanyItem />} />
+                    <Route path="/" element={<YearList />} />
+                </Routes>
+
                 <Footer/>
-              <RouteTracker/>
+                <RouteTracker/>
             </div>
-        </Router>
+        </BrowserRouter>
     );
 }
 
