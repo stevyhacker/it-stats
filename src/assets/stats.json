@@ -201,6 +201,30 @@
                 "employeeCount": 13,
                 "netPayCosts": 481217,
                 "averagePay": 3085
+            },
+            {
+                "name": "Kodio",
+                "totalIncome": 35123377,
+                "profit": 21455370,
+                "employeeCount": 27,
+                "netPayCosts": 549420,
+                "averagePay": 1696
+            },
+            {
+                "name": "EPAM",
+                "totalIncome": 11227017,
+                "profit": 1009342,
+                "employeeCount": 228,
+                "netPayCosts": 6862076,
+                "averagePay": 2508
+            },
+            {
+                "name": "First Line Software",
+                "totalIncome": 1553514,
+                "profit": 115871,
+                "employeeCount": 99,
+                "netPayCosts": 939480,
+                "averagePay": 791
             }
         ]
     },
