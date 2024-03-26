@@ -233,6 +233,22 @@
                 "employeeCount": 6,
                 "netPayCosts": 92419,
                 "averagePay": 1284
+            },
+            {
+                "name": "G5 Entertainment",
+                "totalIncome": 905650,
+                "profit": 11673,
+                "employeeCount": 23,
+                "netPayCosts": 511665,
+                "averagePay": 1854
+            },
+            {
+                "name": "Tungsten Montenegro",
+                "totalIncome": 3697467,
+                "profit": 190365,
+                "employeeCount": 82,
+                "netPayCosts": 1788392,
+                "averagePay": 1817
             }
         ]
     },
