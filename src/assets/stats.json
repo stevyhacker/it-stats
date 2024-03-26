@@ -225,6 +225,14 @@
                 "employeeCount": 99,
                 "netPayCosts": 939480,
                 "averagePay": 791
+            },
+            {
+                "name": "Bixbit",
+                "totalIncome": 230206,
+                "profit": 92457,
+                "employeeCount": 6,
+                "netPayCosts": 92419,
+                "averagePay": 1284
             }
         ]
     },
