@@ -249,6 +249,14 @@
                 "employeeCount": 82,
                 "netPayCosts": 1788392,
                 "averagePay": 1817
+            },
+            {
+                "name": "BGS Consulting",
+                "totalIncome": 1870017,
+                "profit": 750644,
+                "employeeCount": 31,
+                "netPayCosts": 524136,
+                "averagePay": "1409"
             }
         ]
     },
