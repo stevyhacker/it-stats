@@ -177,6 +177,14 @@
                 "employeeCount": 35,
                 "netPayCosts": 706335,
                 "averagePay": "1682"
+            },
+            {
+                "name": "Vega IT Omega",
+                "totalIncome": 1535123,
+                "profit": 286360,
+                "employeeCount": 35,
+                "netPayCosts": 791852,
+                "averagePay": "1885"
             }
         ]
     },
