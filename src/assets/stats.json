@@ -185,6 +185,14 @@
                 "employeeCount": 35,
                 "netPayCosts": 791852,
                 "averagePay": "1885"
+            },
+            {
+                "name": "Artec 3D Adriatica",
+                "totalIncome": 5294941,
+                "profit": 0,
+                "employeeCount": 84,
+                "netPayCosts": 4227925,
+                "averagePay": "3038"
             }
         ]
     },
