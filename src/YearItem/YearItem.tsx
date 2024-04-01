@@ -103,7 +103,7 @@ function YearItem(props) {
         initiallyOpened = true
         columns[4].hidden = false
         columns[5].hidden = false
-    } else if (props.item.year === '2020' || props.item.year === '2021') {
+    } else if (props.item.year === '2020' || props.item.year === '2021' || props.item.year === '2022') {
         columns[4].hidden = false
         columns[5].hidden = false
     } else {
