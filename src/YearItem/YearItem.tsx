@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
-import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
+import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
 import './YearItem.css'
 import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
 import {Collapse} from 'react-collapse';
@@ -60,7 +60,8 @@ const columns = [
         headerStyle: headerStyle1,
         style: columnStyle
     }, {
-        text: "Profit", dataField: "profit",
+        text: "Profit",
+        dataField: "profit",
         formatter: currencyFormatter, sort: true,
         headerStyle: headerStyle2,
         style: columnStyle
@@ -69,8 +70,16 @@ const columns = [
         headerStyle: headerStyle1,
         style: columnStyle
     }, {
-        text: "Average Pay*", dataField: "averagePay",
-        formatter: currencyFormatter, sort: true,
+        text: "Average Pay*",
+        dataField: "averagePay",
+        formatter: currencyFormatter,
+        sort: true,
+        sortFunc: (a, b, order, dataField, rowA, rowB) => {
+            if (order === 'asc') {
+                return rowA.averagePay - rowB.averagePay;
+            }
+            return rowB.averagePay - rowA.averagePay;
+        },
         headerStyle: headerStyle2,
         style: {columnStyle}
     }, {
@@ -94,8 +103,7 @@ function YearItem(props) {
         initiallyOpened = true
         columns[4].hidden = false
         columns[5].hidden = false
-    }
-    else if (props.item.year === '2020' || props.item.year === '2021') {
+    } else if (props.item.year === '2020' || props.item.year === '2021') {
         columns[4].hidden = false
         columns[5].hidden = false
     } else {
