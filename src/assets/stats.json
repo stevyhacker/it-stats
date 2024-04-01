@@ -1,5 +1,186 @@
 [
     {
+        "year": "2023",
+        "companyList": [
+            {
+                "name": "Coinis",
+                "totalIncome": 10975641,
+                "profit": 2513996,
+                "employeeCount": 87,
+                "netPayCosts": 1111619,
+                "averagePay": "1065"
+            },
+            {
+                "name": "CoreIT",
+                "totalIncome": 7438351,
+                "profit": 1226775,
+                "employeeCount": 26,
+                "netPayCosts": 293500,
+                "averagePay": "941"
+            },
+            {
+                "name": "Amplitudo",
+                "totalIncome": 1665550,
+                "profit": 150343,
+                "employeeCount": 74,
+                "netPayCosts": 897699,
+                "averagePay": "1011"
+            },
+            {
+                "name": "Datum Solutions",
+                "totalIncome": 1259421,
+                "profit": 80433,
+                "employeeCount": 27,
+                "netPayCosts": 726884,
+                "averagePay": "2243"
+            },
+            {
+                "name": "International Bridge",
+                "totalIncome": 1337464,
+                "profit": 28697,
+                "employeeCount": 49,
+                "netPayCosts": 845194,
+                "averagePay": "1437"
+            },
+            {
+                "name": "Datalab",
+                "totalIncome": 1477177,
+                "profit": 345190,
+                "employeeCount": 16,
+                "netPayCosts": 240382,
+                "averagePay": "1251"
+            },
+            {
+                "name": "SynergySuite",
+                "totalIncome": 1600000,
+                "profit": 7044,
+                "employeeCount": 51,
+                "netPayCosts": 967014,
+                "averagePay": "1580"
+            },
+            {
+                "name": "Alicorn",
+                "totalIncome": 440124,
+                "profit": 32076,
+                "employeeCount": 16,
+                "netPayCosts": 200930,
+                "averagePay": "1047"
+            },
+            {
+                "name": "Uhura Solutions",
+                "totalIncome": 547252,
+                "profit": 67503,
+                "employeeCount": 20,
+                "netPayCosts": 276249,
+                "averagePay": "1151"
+            },
+            {
+                "name": "Winsoft",
+                "totalIncome": 362214,
+                "profit": 25179,
+                "employeeCount": 7,
+                "netPayCosts": 150970,
+                "averagePay": "1797"
+            },
+            {
+                "name": "Codeus",
+                "totalIncome": 920208,
+                "profit": 251797,
+                "employeeCount": 24,
+                "netPayCosts": 365280,
+                "averagePay": "1268"
+            },
+            {
+                "name": "Digital Control",
+                "totalIncome": 274609,
+                "profit": 10885,
+                "employeeCount": 10,
+                "netPayCosts": 203958,
+                "averagePay": "1700"
+            },
+            {
+                "name": "Infinum",
+                "totalIncome": 1009443,
+                "profit": 203582,
+                "employeeCount": 18,
+                "netPayCosts": 457737,
+                "averagePay": "2119"
+            },
+            {
+                "name": "Kodio",
+                "totalIncome": 8446099,
+                "profit": 71007,
+                "employeeCount": 29,
+                "netPayCosts": 588594,
+                "averagePay": "1691"
+            },
+            {
+                "name": "EPAM",
+                "totalIncome": 17798647,
+                "profit": 1839541,
+                "employeeCount": 352,
+                "netPayCosts": 9784447,
+                "averagePay": "2316"
+            },
+            {
+                "name": "First Line Software",
+                "totalIncome": 3602568,
+                "profit": 95097,
+                "employeeCount": 205,
+                "netPayCosts": 2162743,
+                "averagePay": "879"
+            },
+            {
+                "name": "Quantox Technology",
+                "totalIncome": 467000,
+                "profit": 0,
+                "employeeCount": 11,
+                "netPayCosts": 317966,
+                "averagePay": "2409"
+            },
+            {
+                "name": "BIXBIT",
+                "totalIncome": 263759,
+                "profit": 47523,
+                "employeeCount": 11,
+                "netPayCosts": 138420,
+                "averagePay": "1049"
+            },
+            {
+                "name": "GoldBear Technologies",
+                "totalIncome": 129207,
+                "profit": 9445,
+                "employeeCount": 9,
+                "netPayCosts": 79973,
+                "averagePay": "740"
+            },
+            {
+                "name": "G5 Entertainment",
+                "totalIncome": 3977001,
+                "profit": 252664,
+                "employeeCount": 80,
+                "netPayCosts": 2294586,
+                "averagePay": "2390"
+            },
+            {
+                "name": "Tungsten Montenegro",
+                "totalIncome": 6195958,
+                "profit": 379810,
+                "employeeCount": 117,
+                "netPayCosts": 3445898,
+                "averagePay": "2454"
+            },
+            {
+                "name": "BGS Consulting",
+                "totalIncome": 1857724,
+                "profit": 462343,
+                "employeeCount": 35,
+                "netPayCosts": 706335,
+                "averagePay": "1682"
+            }
+        ]
+    },
+    {
         "year": "2022",
         "companyList": [
             {
