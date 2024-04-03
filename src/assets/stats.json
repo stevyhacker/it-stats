@@ -201,6 +201,31 @@
                 "employeeCount": 143,
                 "netPayCosts": 1861235,
                 "averagePay": "1085"
+            },
+            {
+                "name": "Fleka",
+                "totalIncome": 395044,
+                "profit": 95608,
+                "employeeCount": 14,
+                "netPayCosts": 207584,
+                "averagePay": "1214"
+            },
+            {
+                "name": "Codepixel",
+                "Year": 2023,
+                "totalIncome": 391493,
+                "profit": 44014,
+                "employeeCount": 14,
+                "netPayCosts": 199800,
+                "averagePay": " 1189"
+            },
+            {
+                "name": "Bild Studio",
+                "totalIncome": 1564693,
+                "profit": 0,
+                "employeeCount": 58,
+                "netPayCosts": 955708,
+                "averagePay": " 1373"
             }
         ]
     },
