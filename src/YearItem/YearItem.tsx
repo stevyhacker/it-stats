@@ -30,7 +30,7 @@ const headerStyle1 = {
     fontSize: '1rem',
     backgroundColor: '#48316e',
     whiteSpace: "nowrap",
-    width: '12rem',
+    maxWidth: '5rem',
     textAlign: 'center'
 }
 
@@ -83,7 +83,15 @@ const columns = [
         headerStyle: headerStyle2,
         style: {columnStyle}
     }, {
-        text: "Net wage costs", dataField: "netPayCosts",
+        text: "Net wage costs",
+        dataField: "netPayCosts",
+        formatter: currencyFormatter, sort: true,
+        headerStyle: headerStyle1,
+        style: {columnStyle}
+    },
+    {
+        text: "Income per employee",
+        dataField: "incomePerEmployee",
         formatter: currencyFormatter, sort: true,
         headerStyle: headerStyle1,
         style: {columnStyle}
@@ -125,6 +133,17 @@ function YearItem(props) {
         }
     };
 
+    const data = require('../assets/stats.json');
+
+    data.forEach(year => {
+        year.companyList.forEach(company => {
+            company.incomePerEmployee = company.totalIncome / company.employeeCount;
+            company.incomePerEmployee = Math.round(company.incomePerEmployee);
+        });
+    });
+
+    console.log(data);
+
     return (
 
         <React.Fragment>
@@ -152,6 +171,7 @@ function YearItem(props) {
                                 defaultSorted={defaultSorting}
                                 wrapperClasses="table-responsive"
                                 rowEvents={rowEvents}
+                                hover={true}
                                 rowClasses={"text-white companyItem"} {...props.baseProps}/>
                         </div>
                     )}

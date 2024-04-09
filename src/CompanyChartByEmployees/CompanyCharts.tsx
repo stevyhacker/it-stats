@@ -48,6 +48,20 @@ function CompanyCharts(props) {
                 color: '#c4c0c0',
                 backgroundColor: '#48316e',
             }
+        },
+        {
+            text: "Income per Employee", dataField: "incomePerEmployee", style: {fontSize: '1.1rem'},
+            headerStyle: {
+                color: '#c4c0c0',
+                backgroundColor: '#422966',
+            }
+        },
+        {
+            text: "Year", dataField: "year", style: {fontSize: '1.1rem'},
+            headerStyle: {
+                color: '#c4c0c0',
+                backgroundColor: '#422966',
+            }
         }
     ]
 
@@ -181,6 +195,7 @@ function CompanyCharts(props) {
                 data.datasets[0].data.push(company.employeeCount);
                 profitData.datasets[0].data.push(company.profit);
                 incomeData.datasets[0].data.push(company.totalIncome);
+                company.year = item.year;
                 companyData.push(company);
             }
         })
@@ -211,6 +226,8 @@ function CompanyCharts(props) {
                     keyField="id"
                     data={companyData}
                     columns={columns}
+                    sort={{dataField: 'year', order: 'desc'}}
+                    hover={true}
                     rowClasses={"text-white companyItem"}
                 />
             </div>
