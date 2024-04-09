@@ -12,6 +12,12 @@ const formatter = new Intl.NumberFormat('en-US', {
     currency: 'EUR',
 });
 
+const headerStyle1 = {
+    color: '#c4c0c0',
+    backgroundColor: '#48316e',
+    width: '8rem',
+}
+
 function CompanyCharts(props) {
 
     const columns = [
@@ -20,52 +26,34 @@ function CompanyCharts(props) {
                 fontWeight: 'bold',
                 fontSize: '1.25rem'
             },
-            headerStyle: {
-                color: '#c4c0c0',
-                backgroundColor: '#422966',
-            }
+            headerStyle: headerStyle1
         },
         {
             text: "Total Income",
             dataField: "totalIncome",
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
-            headerStyle: {
-                color: '#c4c0c0',
-                backgroundColor: '#48316e',
-            },
+            headerStyle: headerStyle1
         },
         {
             text: "Profit", dataField: "profit",
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
-            headerStyle: {
-                color: '#c4c0c0',
-                backgroundColor: '#422966',
-            }
+            headerStyle: headerStyle1
         },
         {
             text: "Employees", dataField: "employeeCount", style: {fontSize: '1.1rem'},
-            headerStyle: {
-                color: '#c4c0c0',
-                backgroundColor: '#48316e',
-            }
+            headerStyle: headerStyle1
         },
         {
             text: "Income per Employee", dataField: "incomePerEmployee",
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
-            headerStyle: {
-                color: '#c4c0c0',
-                backgroundColor: '#422966',
-            }
+            headerStyle: headerStyle1
         },
         {
             text: "Year", dataField: "year", style: {fontSize: '1.1rem'},
-            headerStyle: {
-                color: '#c4c0c0',
-                backgroundColor: '#422966',
-            }
+            headerStyle: headerStyle1
         }
     ]
 
@@ -229,6 +217,7 @@ function CompanyCharts(props) {
                 <BootstrapTable
                     keyField="id"
                     data={companyData}
+                    wrapperClasses="table-responsive"
                     columns={columns}
                     sort={{dataField: 'year', order: 'desc'}}
                     hover={true}

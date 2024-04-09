@@ -30,7 +30,7 @@ const headerStyle1 = {
     fontSize: '1rem',
     backgroundColor: '#48316e',
     whiteSpace: "nowrap",
-    maxWidth: '5rem',
+    width: '12rem',
     textAlign: 'center'
 }
 
@@ -38,6 +38,24 @@ const headerStyle2 = {
     color: '#c4c0c0',
     fontSize: '1rem',
     backgroundColor: '#422966',
+    whiteSpace: "nowrap",
+    width: '12rem',
+    textAlign: 'center'
+}
+
+const headerStyle3 = {
+    color: '#c4c0c0',
+    fontSize: '1rem',
+    backgroundColor: '#48316e',
+    whiteSpace: "nowrap",
+    width: '10rem',
+    textAlign: 'center'
+}
+
+const headerStyle4 = {
+    color: '#c4c0c0',
+    fontSize: '0.85rem',
+    backgroundColor: '#48316e',
     whiteSpace: "nowrap",
     width: '12rem',
     textAlign: 'center'
@@ -67,7 +85,7 @@ const columns = [
         style: columnStyle
     }, {
         text: "Employees", dataField: "employeeCount", sort: true,
-        headerStyle: headerStyle1,
+        headerStyle: headerStyle3,
         style: columnStyle
     }, {
         text: "Average Pay*",
@@ -93,7 +111,7 @@ const columns = [
         text: "Income per employee",
         dataField: "incomePerEmployee",
         formatter: currencyFormatter, sort: true,
-        headerStyle: headerStyle1,
+        headerStyle: headerStyle4,
         style: {columnStyle}
     }
 ]
@@ -133,16 +151,14 @@ function YearItem(props) {
         }
     };
 
-    const data = require('../assets/stats.json');
-
-    data.forEach(year => {
-        year.companyList.forEach(company => {
-            company.incomePerEmployee = company.totalIncome / company.employeeCount;
-            company.incomePerEmployee = Math.round(company.incomePerEmployee);
-        });
-    });
-
-    console.log(data);
+    // const data = require('../assets/stats.json');
+    // data.forEach(year => {
+    //     year.companyList.forEach(company => {
+    //         company.incomePerEmployee = company.totalIncome / company.employeeCount;
+    //         company.incomePerEmployee = Math.round(company.incomePerEmployee);
+    //     });
+    // });
+    // console.log(data);
 
     return (
 

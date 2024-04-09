@@ -4,14 +4,6 @@
 	font-size: large;
 }
 
-.companyItem:nth-of-type(odd){
-    background-color: #d74f4f;
-}
-
-.companyItem:nth-of-type(even){
-    background-color: #cae100;
-}
-
 .company-title {
   font-weight: bold;
   margin-top: 1vh;
