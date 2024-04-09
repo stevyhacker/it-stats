@@ -36,7 +36,9 @@ function CompanyCharts(props) {
             },
         },
         {
-            text: "Profit", dataField: "profit", formatter: currencyFormatter, style: {fontSize: '1.1rem'},
+            text: "Profit", dataField: "profit",
+            formatter: currencyFormatter,
+            style: {fontSize: '1.1rem'},
             headerStyle: {
                 color: '#c4c0c0',
                 backgroundColor: '#422966',
@@ -50,7 +52,9 @@ function CompanyCharts(props) {
             }
         },
         {
-            text: "Income per Employee", dataField: "incomePerEmployee", style: {fontSize: '1.1rem'},
+            text: "Income per Employee", dataField: "incomePerEmployee",
+            formatter: currencyFormatter,
+            style: {fontSize: '1.1rem'},
             headerStyle: {
                 color: '#c4c0c0',
                 backgroundColor: '#422966',
