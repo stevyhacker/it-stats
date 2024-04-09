@@ -226,6 +226,23 @@
                 "employeeCount": 58,
                 "netPayCosts": 955708,
                 "averagePay": " 1373"
+            },
+            {
+                "name": "Logate",
+                "totalIncome": 2664302,
+                "profit": 620827,
+                "employeeCount": 59,
+                "netPayCosts": 884232,
+                "averagePay": " 1249"
+            },
+            {
+                "name": "Poslovna Inteligencija",
+                "Year": 2023,
+                "totalIncome": 1620938,
+                "profit": 310412,
+                "employeeCount": 32,
+                "netPayCosts": 682786,
+                "averagePay": " 1778"
             }
         ]
     },
