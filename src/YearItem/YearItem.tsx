@@ -3,9 +3,9 @@ import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
 import './YearItem.css'
 import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
-import {Collapse} from 'react-collapse';
 import {useNavigate} from "react-router-dom";
 import './ResponsiveTable.css'
+import HeroNumbers from "../HeroNumbers/HeroNumbers";
 
 const {SearchBar} = Search;
 
@@ -22,7 +22,7 @@ function currencyFormatter(cell, row) {
 
 const columnStyle = {
     fontSize: '1.1rem',
-    textAlign: 'center'
+    textAlign: 'right'
 }
 
 const headerStyle1 = {
@@ -55,7 +55,7 @@ const headerStyle3 = {
 const headerStyle4 = {
     color: '#c4c0c0',
     fontSize: '0.85rem',
-    backgroundColor: '#48316e',
+    backgroundColor: '#422966',
     whiteSpace: "nowrap",
     width: '12rem',
     textAlign: 'center'
@@ -99,18 +99,21 @@ const columns = [
             return rowB.averagePay - rowA.averagePay;
         },
         headerStyle: headerStyle2,
+        align: 'right',
         style: {columnStyle}
     }, {
         text: "Net wage costs",
         dataField: "netPayCosts",
         formatter: currencyFormatter, sort: true,
         headerStyle: headerStyle1,
+        align: 'right',
         style: {columnStyle}
     },
     {
         text: "Income per employee",
         dataField: "incomePerEmployee",
         formatter: currencyFormatter, sort: true,
+        align: 'right',
         headerStyle: headerStyle4,
         style: {columnStyle}
     }
@@ -124,30 +127,24 @@ const defaultSorting = [{
 
 function YearItem(props) {
 
-    let initiallyOpened = false
-    if (props.item.year === '2023') {
-        initiallyOpened = true
-        columns[4].hidden = false
-        columns[5].hidden = false
-    } else if (props.item.year === '2020' || props.item.year === '2021' || props.item.year === '2022') {
-        columns[4].hidden = false
-        columns[5].hidden = false
-    } else {
+    // let initiallyOpened = false
+    if (Number.parseInt(props.item.year) < 2020) {
         columns[4].hidden = true
         columns[5].hidden = true
+    } else {
+        columns[4].hidden = false
+        columns[5].hidden = false
     }
-
-    let [isOpened, toggleOpened] = useState(initiallyOpened);
 
     const history = useNavigate();
 
     const rowEvents = {
         onClick: (e, row, rowIndex) => {
             history("/company/" + row.name);
-            console.log(`clicked on row with index: ${rowIndex}`);
+            // console.log(`clicked on row with index: ${rowIndex}`);
         },
         onMouseEnter: (e, row, rowIndex) => {
-            console.log(`enter on row with index: ${rowIndex}`);
+            // console.log(`enter on row with index: ${rowIndex}`);
         }
     };
 
@@ -162,19 +159,14 @@ function YearItem(props) {
 
     return (
 
-        <React.Fragment>
-            <h4 onClick={() => toggleOpened(!isOpened)} className="text-white yearItem">
-                <p className="border"> {props.item.year}</p>
-            </h4>
+        <div>
 
-            <Collapse isOpened={isOpened}>
+            <HeroNumbers item={props.item}/>
 
-                <ChartTopFiveByEmployees companyList={props.item.companyList}/>
                 <ToolkitProvider
                     keyField="id"
                     data={props.item.companyList}
                     columns={columns}
-                    bootstrap4={true}
                     condensed={true}
                     search>
                     {props => (
@@ -192,8 +184,9 @@ function YearItem(props) {
                         </div>
                     )}
                 </ToolkitProvider>
-            </Collapse>
-        </React.Fragment>
+            <ChartTopFiveByEmployees companyList={props.item.companyList}/>
+
+        </div >
     );
 }
 

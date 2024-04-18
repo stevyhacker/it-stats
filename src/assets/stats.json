@@ -1335,9 +1335,9 @@
                 "name": "SynergySuite",
                 "totalIncome": 185000,
                 "profit": 29058,
-                "employeeCount": "",
+                "employeeCount": 11,
                 "id": 16,
-                "incomePerEmployee": null
+                "incomePerEmployee": 16818
             },
             {
                 "name": "Alicorn",

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pie} from "react-chartjs-2";
+import {Bar, Pie} from "react-chartjs-2";
 import {ArcElement, Chart} from "chart.js";
 
 Chart.register(ArcElement);
@@ -26,12 +26,6 @@ function ChartTopFiveByEmployees(props: { companyList: Iterable<unknown> | Array
                 '#ba45bf'
             ]
         }],
-        legend: {
-            labels: {
-                fontColor: 'white',
-                defaultFontSize: 20
-            }
-        }
     };
 
     const companyList = Array.from(props.companyList)
@@ -55,7 +49,8 @@ function ChartTopFiveByEmployees(props: { companyList: Iterable<unknown> | Array
                 <p className="text-center table-label ">Top 5 companies by number of employees</p>
                 <Pie width={200}
                      height={60}
-                     data={data}/>
+                     data={data}
+                />
             </div>
         </React.Fragment>
     );

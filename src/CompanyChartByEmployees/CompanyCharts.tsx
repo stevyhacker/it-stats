@@ -33,26 +33,32 @@ function CompanyCharts(props) {
             dataField: "totalIncome",
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
+            align: 'right',
             headerStyle: headerStyle1
         },
         {
             text: "Profit", dataField: "profit",
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
+            align: 'right',
             headerStyle: headerStyle1
         },
         {
             text: "Employees", dataField: "employeeCount", style: {fontSize: '1.1rem'},
+            align: 'right',
             headerStyle: headerStyle1
         },
         {
             text: "Income per Employee", dataField: "incomePerEmployee",
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
+            align: 'right',
             headerStyle: headerStyle1
         },
         {
             text: "Year", dataField: "year", style: {fontSize: '1.1rem'},
+            align: 'center',
+
             headerStyle: headerStyle1
         }
     ]
@@ -94,7 +100,7 @@ function CompanyCharts(props) {
                 ticks: {
                     min: 0,
                     stepSize: 2,
-                    fontColor: '#efe6e6'
+                    fontColor: '#fff'
                 }
             }]
         }
@@ -124,13 +130,13 @@ function CompanyCharts(props) {
             yAxes: [{
                 ticks: {
                     min: 0,
-                    fontColor: '#efe6e6'
+                    fontColor: '#fff'
                 }
             }],
             xAxes: [{
                 ticks: {
                     min: 0,
-                    fontColor: '#efe6e6',
+                    fontColor: '#fff',
                     defaultFontStyle: 'Arial'
                 }
             }]
@@ -161,13 +167,13 @@ function CompanyCharts(props) {
             yAxes: [{
                 ticks: {
                     min: 0,
-                    fontColor: '#efe6e6'
+                    fontColor: '#ffffff'
                 }
             }],
             xAxes: [{
                 ticks: {
                     min: 0,
-                    fontColor: '#efe6e6',
+                    fontColor: '#ffffff',
                     defaultFontStyle: 'Arial'
                 }
             }]
@@ -197,6 +203,17 @@ function CompanyCharts(props) {
         <React.Fragment>
             <div className="chart-list">
                 <h5 className="text-center chart-title ">Number of employees per year</h5>
+
+                <BootstrapTable
+                    keyField="id"
+                    data={companyData}
+                    wrapperClasses="table-responsive"
+                    columns={columns}
+                    sort={{dataField: 'year', order: 'desc'}}
+                    hover={true}
+                    rowClasses={"text-white companyItem"}
+                />
+
                 <div className="chart-container">
                     <Bar width={'100'}
                          height={'50'}
@@ -214,15 +231,6 @@ function CompanyCharts(props) {
                          height={'50'}
                          data={incomeData}/>
                 </div>
-                <BootstrapTable
-                    keyField="id"
-                    data={companyData}
-                    wrapperClasses="table-responsive"
-                    columns={columns}
-                    sort={{dataField: 'year', order: 'desc'}}
-                    hover={true}
-                    rowClasses={"text-white companyItem"}
-                />
             </div>
         </React.Fragment>
     );
