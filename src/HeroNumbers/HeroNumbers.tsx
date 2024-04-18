@@ -60,9 +60,8 @@ function HeroNumbers(props) {
             <h4 className="text-white yearItem mt-2">
                 <p className="border"> {props.item.year}</p>
             </h4>
-            <p className="hero-number text-white">Total market
-                income: {formatter.format(Number(totalIncome))} €</p>
-            <p className="hero-number text-white">Total income growth: {yearlyGrowth}%</p>
+            <p className="hero-number text-white">Total market revenue: {formatter.format(Number(totalIncome))} €</p>
+            <p className="hero-number text-white">Total revenue growth: {yearlyGrowth}%</p>
             <p className="hero-number text-white">Total employees: {totalEmployees}</p>
             <p className="hero-number text-white">Total employees growth: {totalEmployeesGrowth}%</p>
         </div>

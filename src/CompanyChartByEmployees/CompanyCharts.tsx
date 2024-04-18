@@ -26,10 +26,11 @@ function CompanyCharts(props) {
                 fontWeight: 'bold',
                 fontSize: '1.25rem'
             },
-            headerStyle: headerStyle1
+            headerStyle: headerStyle1,
+            align: 'left'
         },
         {
-            text: "Total Income",
+            text: "Total Revenue",
             dataField: "totalIncome",
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
@@ -49,7 +50,7 @@ function CompanyCharts(props) {
             headerStyle: headerStyle1
         },
         {
-            text: "Income per Employee", dataField: "incomePerEmployee",
+            text: "Revenue per Employee", dataField: "incomePerEmployee",
             formatter: currencyFormatter,
             style: {fontSize: '1.1rem'},
             align: 'right',

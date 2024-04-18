@@ -13,7 +13,7 @@ function YearList() {
         setSelectedYear(e.currentTarget.textContent);
     }
 
-    return <div>
+    return <div className={"overflow-auto"}>
 
         <div className={"btn-group mb-4"}>
             {statsData.map(item => (

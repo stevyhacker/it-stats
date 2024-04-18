@@ -71,7 +71,7 @@ const columns = [
         }
     },
     {
-        text: "Total Income",
+        text: "Total Revenue",
         dataField: "totalIncome",
         formatter: currencyFormatter,
         sort: true,
@@ -110,7 +110,7 @@ const columns = [
         style: {columnStyle}
     },
     {
-        text: "Income per employee",
+        text: "Revenue per employee",
         dataField: "incomePerEmployee",
         formatter: currencyFormatter, sort: true,
         align: 'right',
@@ -163,30 +163,30 @@ function YearItem(props) {
 
             <HeroNumbers item={props.item}/>
 
-                <ToolkitProvider
-                    keyField="id"
-                    data={props.item.companyList}
-                    columns={columns}
-                    condensed={true}
-                    search>
-                    {props => (
-                        <div>
-                            <div className={"searchBar"}>
-                                <SearchBar {...props.searchProps} />
-                            </div>
-                            <p className="text-center table-label ">Companies sorted by Total Income</p>
-                            <BootstrapTable
-                                defaultSorted={defaultSorting}
-                                wrapperClasses="table-responsive"
-                                rowEvents={rowEvents}
-                                hover={true}
-                                rowClasses={"text-white companyItem"} {...props.baseProps}/>
+            <ToolkitProvider
+                keyField="id"
+                data={props.item.companyList}
+                columns={columns}
+                condensed={true}
+                search>
+                {props => (
+                    <div>
+                        <div className={"searchBar"}>
+                            <SearchBar {...props.searchProps} />
                         </div>
-                    )}
-                </ToolkitProvider>
+                        <p className="text-center table-label ">Companies sorted by Total Revenue</p>
+                        <BootstrapTable
+                            defaultSorted={defaultSorting}
+                            wrapperClasses="table-responsive"
+                            rowEvents={rowEvents}
+                            hover={true}
+                            rowClasses={"text-white companyItem"} {...props.baseProps}/>
+                    </div>
+                )}
+            </ToolkitProvider>
             <ChartTopFiveByEmployees companyList={props.item.companyList}/>
 
-        </div >
+        </div>
     );
 }
 
