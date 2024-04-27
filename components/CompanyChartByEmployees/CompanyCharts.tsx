@@ -1,10 +1,11 @@
 import React from 'react';
 import {Bar} from "react-chartjs-2";
 import './CompanyCharts.css'
-import statsData from "../assets/stats.json";
-import BootstrapTable from "react-bootstrap-table-next";
+import statsData from "@/assets/stats.json";
+import _BootstrapTable from "react-bootstrap-table-next";
 import {Chart, registerables} from "chart.js";
 
+const BootstrapTable = _BootstrapTable as React.ElementType;
 Chart.register(...registerables);
 
 const formatter = new Intl.NumberFormat('en-US', {
@@ -18,7 +19,9 @@ const headerStyle1 = {
     width: '8rem',
 }
 
-function CompanyCharts(props) {
+function CompanyCharts({params}: { params: { name: string } }) {
+
+    const companyName = params.name;
 
     const columns = [
         {
@@ -181,7 +184,6 @@ function CompanyCharts(props) {
         }
     };
 
-    const companyName = decodeURI(props.company);
     let companyData = []
     let yearly = Array.from(statsData)
     yearly.reverse()

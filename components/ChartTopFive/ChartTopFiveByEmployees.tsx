@@ -1,11 +1,17 @@
 import React from 'react';
-import {Bar, Pie} from "react-chartjs-2";
+import {Pie} from "react-chartjs-2";
 import {ArcElement, Chart} from "chart.js";
 
 Chart.register(ArcElement);
 
+interface Company {
+    name: string;
+    employeeCount: number;
+    totalIncome: number;
+    incomePerEmployee?: number;
+}
 
-function ChartTopFiveByEmployees(props: { companyList: Iterable<unknown> | ArrayLike<unknown>; }) {
+function ChartTopFiveByEmployees(props: { companyList: Iterable<Company> | ArrayLike<unknown>; }) {
 
     let data = {
         labels: [],
@@ -28,7 +34,8 @@ function ChartTopFiveByEmployees(props: { companyList: Iterable<unknown> | Array
         }],
     };
 
-    const companyList = Array.from(props.companyList)
+    // @ts-ignore
+    const companyList : Company[] = Array.from(props.companyList)
 
     companyList.sort(function (a, b) {
         if (a.employeeCount < b.employeeCount) return 1;

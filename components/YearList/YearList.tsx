@@ -1,7 +1,9 @@
+"use client";
+
 import React, {useState} from 'react';
 import './YearList.css'
 import YearItem from "../YearItem/YearItem";
-import statsData from '../assets/stats.json'
+import statsData from "@/assets/stats.json";
 
 function YearList() {
 

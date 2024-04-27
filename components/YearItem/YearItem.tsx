@@ -1,11 +1,12 @@
-import React, {useState} from 'react';
+import React from 'react';
 import BootstrapTable from 'react-bootstrap-table-next';
 import ToolkitProvider, {Search} from 'react-bootstrap-table2-toolkit/dist/react-bootstrap-table2-toolkit';
 import './YearItem.css'
 import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
-import {useNavigate} from "react-router-dom";
+
 import './ResponsiveTable.css'
 import HeroNumbers from "../HeroNumbers/HeroNumbers";
+import {useRouter} from "next/navigation";
 
 const {SearchBar} = Search;
 
@@ -129,18 +130,22 @@ function YearItem(props) {
 
     // let initiallyOpened = false
     if (Number.parseInt(props.item.year) < 2020) {
+        // @ts-ignore
         columns[4].hidden = true
+        // @ts-ignore
         columns[5].hidden = true
     } else {
+        // @ts-ignore
         columns[4].hidden = false
+        // @ts-ignore
         columns[5].hidden = false
     }
 
-    const history = useNavigate();
+    const router = useRouter()
 
     const rowEvents = {
         onClick: (e, row, rowIndex) => {
-            history("/company/" + row.name);
+            router.push("/company/" + row.name);
             // console.log(`clicked on row with index: ${rowIndex}`);
         },
         onMouseEnter: (e, row, rowIndex) => {

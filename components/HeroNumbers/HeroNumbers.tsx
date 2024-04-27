@@ -1,6 +1,8 @@
+"use client";
+
 import React, {useEffect, useState} from "react"
 
-import statsData from '../assets/stats.json'
+import statsData from "@/assets/stats.json";
 import './HeroNumbers.css'
 
 const formatter = new Intl.NumberFormat('en-US', {
@@ -28,9 +30,9 @@ function HeroNumbers(props) {
         currentYear.companyList.forEach(company => {
             if (company.totalIncome > 0) {
                 currentYearTotalIncome += company.totalIncome;
-                console.log(company.name)
-                console.log(company.employeeCount)
-                console.log(currentYearTotalEmployees)
+                // console.log(company.name)
+                // console.log(company.employeeCount)
+                // console.log(currentYearTotalEmployees)
             }
             currentYearTotalEmployees += company.employeeCount;
         });
