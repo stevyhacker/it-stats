@@ -8,6 +8,9 @@ import {Chart, registerables} from "chart.js";
 const BootstrapTable = _BootstrapTable as React.ElementType;
 Chart.register(...registerables);
 
+Chart.defaults.color = '#fff';
+Chart.defaults.font.size = 14;
+
 const formatter = new Intl.NumberFormat('en-US', {
     style: 'decimal',
     currency: 'EUR',
@@ -160,13 +163,6 @@ function CompanyCharts({params}: { params: { name: string } }) {
                 '#0620a0'
             ]
         }],
-        legend: {
-            display: false,
-            chart: {
-                defaultFontSize: 30,
-                fontColor: 'white'
-            }
-        },
         scales: {
             yAxes: [{
                 ticks: {
@@ -182,6 +178,14 @@ function CompanyCharts({params}: { params: { name: string } }) {
                 }
             }]
         }
+    };
+
+    const options = {
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
     };
 
     let companyData = []
@@ -218,21 +222,31 @@ function CompanyCharts({params}: { params: { name: string } }) {
                 />
 
                 <div className="chart-container">
-                    <Bar width={'100'}
+
+                    <h5 className="text-center chart-title ">Employees per year</h5>
+
+
+                    <Bar className={"mb-4"}
+                        width={'100'}
                          height={'50'}
-                         data={data}/>
+                         data={data}
+                         options={options}/>
 
                     <h5 className="text-center chart-title ">Profit per year</h5>
 
-                    <Bar width={'100'}
+                    <Bar className={"mb-4"}
+                        width={'100'}
                          height={'50'}
-                         data={profitData}/>
+                         data={profitData}
+                         options={options}/>
 
                     <h5 className="text-center chart-title ">Income per year</h5>
 
-                    <Bar width={'100'}
+                    <Bar className={"mb-2"}
+                        width={'100'}
                          height={'50'}
-                         data={incomeData}/>
+                         data={incomeData}
+                         options={options}/>
                 </div>
             </div>
         </React.Fragment>

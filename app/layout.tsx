@@ -1,7 +1,6 @@
 import {Metadata} from 'next'
 import React from 'react';
 import './index.css';
-import './App.css';
 import Footer from "../components/Footer/Footer";
 import Link from "next/link";
 
@@ -9,11 +8,6 @@ import Link from "next/link";
 import 'bootstrap/dist/css/bootstrap.css';
 import '@/assets/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
-// import 'typeface-nunito'
-// import 'typeface-nunito-sans'
-// import 'typeface-montserrat'
-// import 'typeface-anton'
-// import 'typeface-roboto-condensed'
 
 
 import {Nunito, Nunito_Sans, Montserrat, Roboto_Condensed} from 'next/font/google'

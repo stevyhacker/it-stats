@@ -3,6 +3,8 @@ import {Pie} from "react-chartjs-2";
 import {ArcElement, Chart} from "chart.js";
 
 Chart.register(ArcElement);
+Chart.defaults.color = '#fff';
+Chart.defaults.font.size = 14;
 
 interface Company {
     name: string;
@@ -32,6 +34,68 @@ function ChartTopFiveByEmployees(props: { companyList: Iterable<Company> | Array
                 '#ba45bf'
             ]
         }],
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            layout: {
+                padding: 20
+            },
+            plugins: {
+                tooltip: {
+                    bodyColor: 'blue'
+                },
+                legend: {
+                    labels: {
+                        color: 'blue',
+                    },
+                    position: 'top'
+                }
+            }
+        }
+        // options: {
+        //     legend: {
+        //         labels: {
+        //             fontColor: "blue",
+        //             fontSize: 18
+        //         }
+        //     },
+        // },
+        // options: {
+        //     plugins: {  // 'legend' now within object 'plugins {}'
+        //         legend: {
+        //             labels: {
+        //                 color: "#fff",  // not 'fontColor:' anymore
+        //                 // fontSize: 18  // not 'fontSize:' anymore
+        //                 font: {
+        //                     size: 18 // 'size' now within object 'font {}'
+        //                 }
+        //             }
+        //         }
+        //     },
+        // }
+    };
+
+    const config = {
+        type: 'pie',
+        data: data,
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            layout: {
+                padding: 20
+            },
+            plugins: {
+                tooltip: {
+                    bodyColor: 'blue'
+                },
+                legend: {
+                    labels: {
+                        color: 'blue',
+                    },
+                    position: 'top'
+                }
+            }
+        }
     };
 
     // @ts-ignore
@@ -47,6 +111,7 @@ function ChartTopFiveByEmployees(props: { companyList: Iterable<Company> | Array
 
     topFive.forEach(company => {
         data.labels.push(company.name);
+        data.labels
         data.datasets[0].data.push(company.employeeCount);
     })
 
