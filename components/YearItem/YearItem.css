@@ -1,6 +1,10 @@
 .searchBar {
-    text-align: end;
+    width: 30%;
+    float: right;
+}
 
+.searchBar label {
+  width: 100%;
 }
 
 .yearItem {

@@ -3,3 +3,43 @@
     font-family: Nunito Sans, sans-serif;
     font-weight: bold;
 }
+
+.total-market-revenue-wrapper {
+    background-color: #a2c09b;
+    color: #347523;
+    font-weight: 400;
+}
+
+.total-market-revenue-wrapper h3 {
+    color: #347523;
+}
+
+.total-revenue-growth-wrapper {
+    background-color: #fecf97;
+    color: #c36e03;
+    font-weight: 400;
+}
+
+.total-revenue-growth-wrapper h3 {
+    color: #c36e03;
+}
+
+.total-employees-wrapper {
+    background-color: #b998c1;
+    color: #663d74;
+    font-weight: 400;
+}
+
+.total-employees-wrapper h3 {
+    color: #663d74;
+}
+
+.total-employees-growth-wrapper {
+    background-color: #c09a99;
+    color: #7a3738;
+    font-weight: 400;
+}
+
+.total-employees-growth-wrapper h3 {
+    color: #7a3738;
+}

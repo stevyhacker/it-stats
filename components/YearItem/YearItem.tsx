@@ -177,7 +177,7 @@ function YearItem(props) {
                 {props => (
                     <div>
                         <div className={"searchBar"}>
-                            <SearchBar {...props.searchProps} />
+                            <SearchBar {...props.searchProps} placeholder="Search by name" />
                         </div>
                         <p className="text-center table-label ">Companies sorted by Total Revenue</p>
                         <BootstrapTable
