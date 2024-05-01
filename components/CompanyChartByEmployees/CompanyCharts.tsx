@@ -256,10 +256,9 @@ function CompanyCharts({params}: { params: { name: string } }) {
 
                 <BootstrapTable
                     keyField="id"
-                    data={companyData}
                     wrapperClasses="table-responsive"
+                    data={companyData}
                     columns={columns}
-                    sort={{dataField: 'year', order: 'desc'}}
                     hover={true}
                     rowClasses={"text-white companyItem"}
                 />
