@@ -70,7 +70,7 @@ function HeroNumbers(props) {
     return (
         <div className={"text-white border text-center mb-2"}>
             <h4 className="text-white yearItem mt-2">
-                <p className="border"> {props.item.year}</p>
+                <p className=""> {props.item.year}</p>
             </h4>
             <div className="container mb-2">
                 <div className="row">

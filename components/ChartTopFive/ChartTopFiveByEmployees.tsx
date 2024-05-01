@@ -4,7 +4,7 @@ import {ArcElement, Chart} from "chart.js";
 
 Chart.register(ArcElement);
 Chart.defaults.color = '#fff';
-Chart.defaults.font.size = 14;
+Chart.defaults.font.size = 13;
 
 interface Company {
     name: string;
@@ -118,7 +118,7 @@ function ChartTopFiveByEmployees(props: { companyList: Iterable<Company> | Array
     return (
         <React.Fragment>
             <div style={{width: '25%', textAlign: "center", marginLeft: "auto", marginRight: "auto"}}>
-                <p className="text-center table-label ">Top 5 companies by number of employees</p>
+                <p className="text-center chart-label ">Top 5 companies by number of employees</p>
                 <Pie width={200}
                      height={60}
                      data={data}

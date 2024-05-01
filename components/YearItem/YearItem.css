@@ -4,13 +4,13 @@
 }
 
 .searchBar label {
-  width: 100%;
+    width: 100%;
 }
 
 .yearItem {
-  padding: 1vh;
-  font-weight: bold;
-	font-size: large;
+    /*padding: 1vh;*/
+    font-weight: bold;
+    font-size: large;
 }
 
 .yearItem p {
@@ -26,13 +26,20 @@ td:hover {
 }
 
 .table-label {
-  color: #c4c0c0;
-  font-weight: bold;
-  padding-bottom: 1vh;
-  font-size: 1.75rem;
-  font-family: Roboto Condensed, sans-serif;
+    margin-top: 2vh;
+    color: #c4c0c0;
+    font-size: 1.25rem;
+    font-family: Roboto Condensed, sans-serif;
+}
+
+.chart-label {
+    font-weight: bold;
+    margin-top: 2vh;
+    color: #fff;
+    font-size: 1.25rem;
+    font-family: Roboto Condensed, sans-serif;
 }
 
 .money-label {
-  white-space: nowrap;
+    white-space: nowrap;
 }
