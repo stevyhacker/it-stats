@@ -3,8 +3,6 @@
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    padding: 3vh;
-
 }
 
 .chart-container {
@@ -25,4 +23,20 @@
     .chart-container {
         width: 50%;
     }
+}
+
+td:hover {
+    background-color: #2258c3;
+}
+
+.table-label {
+  color: #c4c0c0;
+  font-weight: bold;
+  padding-bottom: 1vh;
+  font-size: 1.75rem;
+  font-family: Roboto Condensed, sans-serif;
+}
+
+.money-label {
+  white-space: nowrap;
 }

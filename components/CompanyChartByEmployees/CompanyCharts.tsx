@@ -1,72 +1,121 @@
 import React from 'react';
 import {Bar} from "react-chartjs-2";
 import './CompanyCharts.css'
-import statsData from "../assets/stats.json";
-import BootstrapTable from "react-bootstrap-table-next";
+import statsData from "@/assets/stats.json";
+import _BootstrapTable from "react-bootstrap-table-next";
 import {Chart, registerables} from "chart.js";
 
+const BootstrapTable = _BootstrapTable as React.ElementType;
 Chart.register(...registerables);
 
-const formatter = new Intl.NumberFormat('en-US', {
-    style: 'decimal',
-    currency: 'EUR',
+Chart.defaults.color = '#fff';
+Chart.defaults.font.size = 14;
+
+const formatter = new Intl.NumberFormat("en-US", {
+    style: "decimal",
+    currency: "EUR",
 });
 
-const headerStyle1 = {
-    color: '#c4c0c0',
-    backgroundColor: '#48316e',
-    width: '8rem',
-}
+const columnStyle = {
+    fontSize: "1.1rem",
+    textAlign: "right",
+};
 
-function CompanyCharts(props) {
+const headerStyle1 = {
+    color: "#c4c0c0",
+    fontSize: "1rem",
+    backgroundColor: "#48316e",
+    whiteSpace: "nowrap",
+    width: "12rem",
+    textAlign: "center",
+};
+
+const headerStyle2 = {
+    color: "#c4c0c0",
+    fontSize: "1rem",
+    backgroundColor: "#422966",
+    whiteSpace: "nowrap",
+    width: "12rem",
+    textAlign: "center",
+};
+
+const headerStyle3 = {
+    color: "#c4c0c0",
+    fontSize: "1rem",
+    backgroundColor: "#48316e",
+    whiteSpace: "nowrap",
+    width: "10rem",
+    textAlign: "center",
+};
+
+const headerStyle4 = {
+    color: "#c4c0c0",
+    fontSize: "0.85rem",
+    backgroundColor: "#422966",
+    whiteSpace: "nowrap",
+    width: "12rem",
+    textAlign: "center",
+};
+
+function CompanyCharts({params}: { params: { name: string } }) {
+    const companyName = params.name;
 
     const columns = [
         {
-            text: "Name", dataField: "name", style: {
-                fontWeight: 'bold',
-                fontSize: '1.25rem'
+            text: "Name",
+            dataField: "name",
+            sort: true,
+            headerStyle: headerStyle2,
+            style: {
+                fontWeight: "bold",
+                fontSize: "1.25rem",
             },
-            headerStyle: headerStyle1,
-            align: 'left'
         },
         {
             text: "Total Revenue",
             dataField: "totalIncome",
             formatter: currencyFormatter,
-            style: {fontSize: '1.1rem'},
-            align: 'right',
-            headerStyle: headerStyle1
+            sort: true,
+            headerStyle: headerStyle1,
+            style: columnStyle,
         },
         {
-            text: "Profit", dataField: "profit",
+            text: "Profit",
+            dataField: "profit",
             formatter: currencyFormatter,
-            style: {fontSize: '1.1rem'},
-            align: 'right',
-            headerStyle: headerStyle1
+            sort: true,
+            headerStyle: headerStyle2,
+            style: columnStyle,
         },
         {
-            text: "Employees", dataField: "employeeCount", style: {fontSize: '1.1rem'},
-            align: 'right',
-            headerStyle: headerStyle1
+            text: "Employees",
+            dataField: "employeeCount",
+            sort: true,
+            headerStyle: headerStyle3,
+            style: columnStyle,
         },
         {
-            text: "Revenue per Employee", dataField: "incomePerEmployee",
+            text: "Revenue per Employee",
+            dataField: "incomePerEmployee",
             formatter: currencyFormatter,
-            style: {fontSize: '1.1rem'},
-            align: 'right',
-            headerStyle: headerStyle1
+            sort: true,
+            align: "right",
+            headerStyle: headerStyle4,
+            style: { columnStyle },
         },
         {
-            text: "Year", dataField: "year", style: {fontSize: '1.1rem'},
-            align: 'center',
-
-            headerStyle: headerStyle1
-        }
-    ]
+            text: "Year",
+            dataField: "year",
+            sort: true,
+            align: "right",
+            headerStyle: headerStyle1,
+            style: { columnStyle },
+        },
+    ];
 
     function currencyFormatter(cell, row) {
         return (
-            <span>{formatter.format(cell)} €</span>
+            <span className={"money-label"}>{formatter.format(cell)} €</span>
         );
     }
 
@@ -157,13 +206,6 @@ function CompanyCharts(props) {
                 '#0620a0'
             ]
         }],
-        legend: {
-            display: false,
-            chart: {
-                defaultFontSize: 30,
-                fontColor: 'white'
-            }
-        },
         scales: {
             yAxes: [{
                 ticks: {
@@ -181,7 +223,14 @@ function CompanyCharts(props) {
         }
     };
 
-    const companyName = decodeURI(props.company);
+    const options = {
+        plugins: {
+            legend: {
+                display: false,
+            },
+        },
+    };
+
     let companyData = []
     let yearly = Array.from(statsData)
     yearly.reverse()
@@ -207,30 +256,39 @@ function CompanyCharts(props) {
 
                 <BootstrapTable
                     keyField="id"
-                    data={companyData}
                     wrapperClasses="table-responsive"
+                    data={companyData}
                     columns={columns}
-                    sort={{dataField: 'year', order: 'desc'}}
                     hover={true}
                     rowClasses={"text-white companyItem"}
                 />
 
                 <div className="chart-container">
-                    <Bar width={'100'}
+
+                    <h5 className="text-center chart-title ">Employees per year</h5>
+
+
+                    <Bar className={"mb-4"}
+                        width={'100'}
                          height={'50'}
-                         data={data}/>
+                         data={data}
+                         options={options}/>
 
                     <h5 className="text-center chart-title ">Profit per year</h5>
 
-                    <Bar width={'100'}
+                    <Bar className={"mb-4"}
+                        width={'100'}
                          height={'50'}
-                         data={profitData}/>
+                         data={profitData}
+                         options={options}/>
 
                     <h5 className="text-center chart-title ">Income per year</h5>
 
-                    <Bar width={'100'}
+                    <Bar className={"mb-2"}
+                        width={'100'}
                          height={'50'}
-                         data={incomeData}/>
+                         data={incomeData}
+                         options={options}/>
                 </div>
             </div>
         </React.Fragment>
