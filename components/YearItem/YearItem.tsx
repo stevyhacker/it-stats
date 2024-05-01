@@ -9,10 +9,10 @@ import ChartTopFiveByEmployees from "../ChartTopFive/ChartTopFiveByEmployees";
 
 import "./ResponsiveTable.css";
 import HeroNumbers from "../HeroNumbers/HeroNumbers";
-import { useRouter } from "next/navigation";
-import { Chart, registerables } from "chart.js";
+import {useRouter} from "next/navigation";
+import {Chart, registerables} from "chart.js";
 
-const { SearchBar } = Search;
+const {SearchBar} = Search;
 
 Chart.register(...registerables);
 
@@ -116,7 +116,7 @@ const columns = [
         },
         headerStyle: headerStyle2,
         align: "right",
-        style: { columnStyle },
+        style: {columnStyle},
     },
     {
         text: "Net wage costs",
@@ -125,7 +125,7 @@ const columns = [
         sort: true,
         headerStyle: headerStyle1,
         align: "right",
-        style: { columnStyle },
+        style: {columnStyle},
     },
     {
         text: "Revenue per employee",
@@ -134,7 +134,7 @@ const columns = [
         sort: true,
         align: "right",
         headerStyle: headerStyle4,
-        style: { columnStyle },
+        style: {columnStyle},
     },
 ];
 
@@ -184,7 +184,7 @@ function YearItem(props) {
 
     return (
         <div>
-            <HeroNumbers item={props.item} />
+            <HeroNumbers item={props.item}/>
 
             <ToolkitProvider
                 keyField="id"
@@ -201,7 +201,7 @@ function YearItem(props) {
                                 placeholder="Search by name"
                             />
                         </div>
-                        <p className="text-center table-label ">
+                        <p className=" table-label ">
                             Companies sorted by Total Revenue
                         </p>
                         <BootstrapTable
@@ -215,7 +215,7 @@ function YearItem(props) {
                     </div>
                 )}
             </ToolkitProvider>
-            <ChartTopFiveByEmployees companyList={props.item.companyList} />
+            <ChartTopFiveByEmployees companyList={props.item.companyList}/>
         </div>
     );
 }
