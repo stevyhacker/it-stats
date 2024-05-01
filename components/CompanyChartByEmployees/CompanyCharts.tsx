@@ -11,68 +11,111 @@ Chart.register(...registerables);
 Chart.defaults.color = '#fff';
 Chart.defaults.font.size = 14;
 
-const formatter = new Intl.NumberFormat('en-US', {
-    style: 'decimal',
-    currency: 'EUR',
+const formatter = new Intl.NumberFormat("en-US", {
+    style: "decimal",
+    currency: "EUR",
 });
 
+const columnStyle = {
+    fontSize: "1.1rem",
+    textAlign: "right",
+};
+
 const headerStyle1 = {
-    color: '#c4c0c0',
-    backgroundColor: '#48316e',
-    width: '8rem',
-}
+    color: "#c4c0c0",
+    fontSize: "1rem",
+    backgroundColor: "#48316e",
+    whiteSpace: "nowrap",
+    width: "12rem",
+    textAlign: "center",
+};
+
+const headerStyle2 = {
+    color: "#c4c0c0",
+    fontSize: "1rem",
+    backgroundColor: "#422966",
+    whiteSpace: "nowrap",
+    width: "12rem",
+    textAlign: "center",
+};
+
+const headerStyle3 = {
+    color: "#c4c0c0",
+    fontSize: "1rem",
+    backgroundColor: "#48316e",
+    whiteSpace: "nowrap",
+    width: "10rem",
+    textAlign: "center",
+};
+
+const headerStyle4 = {
+    color: "#c4c0c0",
+    fontSize: "0.85rem",
+    backgroundColor: "#422966",
+    whiteSpace: "nowrap",
+    width: "12rem",
+    textAlign: "center",
+};
 
 function CompanyCharts({params}: { params: { name: string } }) {
-
     const companyName = params.name;
 
     const columns = [
         {
-            text: "Name", dataField: "name", style: {
-                fontWeight: 'bold',
-                fontSize: '1.25rem'
+            text: "Name",
+            dataField: "name",
+            sort: true,
+            headerStyle: headerStyle2,
+            style: {
+                fontWeight: "bold",
+                fontSize: "1.25rem",
             },
-            headerStyle: headerStyle1,
-            align: 'left'
         },
         {
             text: "Total Revenue",
             dataField: "totalIncome",
             formatter: currencyFormatter,
-            style: {fontSize: '1.1rem'},
-            align: 'right',
-            headerStyle: headerStyle1
+            sort: true,
+            headerStyle: headerStyle1,
+            style: columnStyle,
         },
         {
-            text: "Profit", dataField: "profit",
+            text: "Profit",
+            dataField: "profit",
             formatter: currencyFormatter,
-            style: {fontSize: '1.1rem'},
-            align: 'right',
-            headerStyle: headerStyle1
+            sort: true,
+            headerStyle: headerStyle2,
+            style: columnStyle,
         },
         {
-            text: "Employees", dataField: "employeeCount", style: {fontSize: '1.1rem'},
-            align: 'right',
-            headerStyle: headerStyle1
+            text: "Employees",
+            dataField: "employeeCount",
+            sort: true,
+            headerStyle: headerStyle3,
+            style: columnStyle,
         },
         {
-            text: "Revenue per Employee", dataField: "incomePerEmployee",
+            text: "Revenue per Employee",
+            dataField: "incomePerEmployee",
             formatter: currencyFormatter,
-            style: {fontSize: '1.1rem'},
-            align: 'right',
-            headerStyle: headerStyle1
+            sort: true,
+            align: "right",
+            headerStyle: headerStyle4,
+            style: { columnStyle },
         },
         {
-            text: "Year", dataField: "year", style: {fontSize: '1.1rem'},
-            align: 'center',
-
-            headerStyle: headerStyle1
-        }
-    ]
+            text: "Year",
+            dataField: "year",
+            sort: true,
+            align: "right",
+            headerStyle: headerStyle1,
+            style: { columnStyle },
+        },
+    ];
 
     function currencyFormatter(cell, row) {
         return (
-            <span>{formatter.format(cell)} €</span>
+            <span className={"money-label"}>{formatter.format(cell)} €</span>
         );
     }
 
@@ -213,10 +256,9 @@ function CompanyCharts({params}: { params: { name: string } }) {
 
                 <BootstrapTable
                     keyField="id"
-                    data={companyData}
                     wrapperClasses="table-responsive"
+                    data={companyData}
                     columns={columns}
-                    sort={{dataField: 'year', order: 'desc'}}
                     hover={true}
                     rowClasses={"text-white companyItem"}
                 />

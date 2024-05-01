@@ -1,12 +1,16 @@
 .searchBar {
-    text-align: end;
+    width: 30%;
+    float: right;
+}
 
+.searchBar label {
+  width: 100%;
 }
 
 .yearItem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  padding: 1vh;
+  font-weight: bold;
+	font-size: large;
 }
 
 .yearItem p {
