@@ -22,7 +22,7 @@
 }
 
 td:hover {
-    background-color: #2258c3;
+    cursor: pointer;
 }
 
 .table-label {
