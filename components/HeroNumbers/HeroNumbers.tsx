@@ -69,10 +69,10 @@ function HeroNumbers(props) {
 
     return (
         <div className={"text-white border text-center mb-2"}>
-            <h4 className="text-white yearItem mt-2">
-                <p className=""> {props.item.year}</p>
+            <h4 className="text-white yearItem ">
+                {/*<p className=""> {props.item.year}</p>*/}
             </h4>
-            <div className="container mb-2">
+            <div className="container mb-2 mt-3">
                 <div className="row">
                     <div className="col-lg-3 col-md-6 mb-2">
                         <div className="card p-2 total-market-revenue-wrapper">

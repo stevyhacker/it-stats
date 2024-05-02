@@ -1,0 +1,9 @@
+.year-tab{
+    transition: 0.3s;
+    font-size: 0.85rem;
+}
+
+.year-tab:hover{
+    cursor: pointer;
+    background: #411d57;
+}
