@@ -26,7 +26,11 @@
 }
 
 td:hover {
-    background-color: #2258c3;
+    cursor:pointer;
+}
+
+td {
+    font-weight: 500;
 }
 
 .table-label {

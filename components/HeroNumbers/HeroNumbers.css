@@ -5,13 +5,13 @@
 }
 
 .total-market-revenue-wrapper {
-    background-color: #a2c09b;
-    color: #347523;
+    background-color: #9bc09c;
+    color: #15701a;
     font-weight: 400;
 }
 
 .total-market-revenue-wrapper h3 {
-    color: #347523;
+    color: #15703c;
 }
 
 .total-revenue-growth-wrapper {
@@ -25,21 +25,21 @@
 }
 
 .total-employees-wrapper {
-    background-color: #b998c1;
-    color: #663d74;
+    background-color: #cc8991;
+    color: #9a303d;
     font-weight: 400;
 }
 
 .total-employees-wrapper h3 {
-    color: #663d74;
+    color: #83232f;
 }
 
 .total-employees-growth-wrapper {
-    background-color: #c09a99;
-    color: #7a3738;
+    background-color: #6b8c85;
+    color: #2c4642;
     font-weight: 400;
 }
 
 .total-employees-growth-wrapper h3 {
-    color: #7a3738;
+    color: #1b3831;
 }
