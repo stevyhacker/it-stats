@@ -8,6 +8,7 @@ import Link from "next/link";
 import 'bootstrap/dist/css/bootstrap.css';
 import '@/assets/bootstrap.min.css';
 import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 
 import {Nunito, Nunito_Sans, Montserrat, Roboto_Condensed} from 'next/font/google'
@@ -68,6 +69,7 @@ export default function RootLayout({
             src="https://analytics.eu.umami.is/script.js"
             data-website-id="6fadf732-8530-481c-9ae9-618cf5a8182f"
         />
+        <GoogleAnalytics gaId="G-1W2VDRX5R1" />
         </html>
     )
 }
