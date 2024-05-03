@@ -11,6 +11,7 @@ import 'react-bootstrap-table-next/dist/react-bootstrap-table2.min.css';
 
 
 import {Nunito, Nunito_Sans, Montserrat, Roboto_Condensed} from 'next/font/google'
+import Script from "next/script";
 
 // If loading a variable font, you don't need to specify the font weight
 const nunito = Nunito({
@@ -38,6 +39,7 @@ const roboto_condensed = Roboto_Condensed({
 export const metadata: Metadata = {
     title: 'IT Stats',
     description: 'IT Montenegro - Companies Finance Stats by Year - 2015-2023',
+    keywords: 'IT, Montenegro, Finance, Stats, Revenue, ICT, Plate, Firme, Zarade, Crna Gora, Podgorica, Companies, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023',
 }
 
 export default function RootLayout({
@@ -61,7 +63,11 @@ export default function RootLayout({
             <Footer/>
         </div>
         </body>
-
+        <Script
+            async
+            src="https://analytics.eu.umami.is/script.js"
+            data-website-id="6fadf732-8530-481c-9ae9-618cf5a8182f"
+        />
         </html>
     )
 }
