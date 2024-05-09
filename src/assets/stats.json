@@ -273,6 +273,42 @@
                 "netPayCosts": 682786,
                 "averagePay": " 1778",
                 "incomePerEmployee": 50654
+            },
+            {
+                "name": "Belka",
+                "Year": 2023,
+                "totalIncome": 4739224,
+                "profit": 129148,
+                "employeeCount": 60,
+                "netPayCosts": 2774544,
+                "averagePay": " 3853"
+            },
+            {
+                "name": "Playrix",
+                "Year": 2023,
+                "totalIncome": 4631400,
+                "profit": 320395,
+                "employeeCount": 90,
+                "netPayCosts": 3134025,
+                "averagePay": " 2140"
+            },
+            {
+                "name": "FSTR",
+                "Year": 2023,
+                "totalIncome": 1439348,
+                "profit": 29612,
+                "employeeCount": 16,
+                "netPayCosts": 1009139,
+                "averagePay": " 3776"
+            },
+            {
+                "name": "Arctic 7",
+                "Year": 2023,
+                "totalIncome": 2482265,
+                "profit": 29436,
+                "employeeCount": 30,
+                "netPayCosts": 2012842,
+                "averagePay": " 4009"
             }
         ]
     },
