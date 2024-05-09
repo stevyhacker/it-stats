@@ -97,6 +97,15 @@ const columns = [
         style: columnStyle,
     },
     {
+        text: "Net wage costs",
+        dataField: "netPayCosts",
+        formatter: currencyFormatter,
+        sort: true,
+        headerStyle: headerStyle1,
+        align: "right",
+        style: {columnStyle},
+    },
+    {
         text: "Employees",
         dataField: "employeeCount",
         sort: true,
@@ -115,15 +124,6 @@ const columns = [
             return rowB.averagePay - rowA.averagePay;
         },
         headerStyle: headerStyle2,
-        align: "right",
-        style: {columnStyle},
-    },
-    {
-        text: "Net wage costs",
-        dataField: "netPayCosts",
-        formatter: currencyFormatter,
-        sort: true,
-        headerStyle: headerStyle1,
         align: "right",
         style: {columnStyle},
     },
@@ -172,7 +172,7 @@ function YearItem(props) {
         },
     };
 
-    // const data = require("../assets/stats.json");
+    // const data = require("../../src/assets/stats.json");
     // data.forEach((year) => {
     //     year.companyList.forEach((company) => {
     //         company.incomePerEmployee =

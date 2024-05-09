@@ -7,7 +7,12 @@ function Footer() {
             <p>*Average pay is an approximation calculated by dividing total net wage costs <br/> for the year by the
                 average number of employees and then dividing by 12 months.</p>
             <br/>
-            <p className="footer-link">All the data was copied from: <a href={"https://eprijava.tax.gov.me"}>https://eprijava.tax.gov.me</a></p>
+            <p className="footer-link">All the data was copied from: <a
+                href={"https://eprijava.tax.gov.me"}>https://eprijava.tax.gov.me</a></p>
+
+            <p className="footer-link font-monospace">Made by: <a
+                href={"https://bogosavljevic.me"}>bogosavljevic.me</a></p>
+
         </footer>
     </div>
 }

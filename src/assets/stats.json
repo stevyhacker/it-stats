@@ -281,7 +281,8 @@
                 "profit": 129148,
                 "employeeCount": 60,
                 "netPayCosts": 2774544,
-                "averagePay": " 3853"
+                "averagePay": 3853,
+                "incomePerEmployee": "78987"
             },
             {
                 "name": "Playrix",
@@ -290,7 +291,8 @@
                 "profit": 320395,
                 "employeeCount": 90,
                 "netPayCosts": 3134025,
-                "averagePay": " 2140"
+                "averagePay": 2140,
+                "incomePerEmployee": 51460
             },
             {
                 "name": "FSTR",
@@ -299,7 +301,8 @@
                 "profit": 29612,
                 "employeeCount": 16,
                 "netPayCosts": 1009139,
-                "averagePay": " 3776"
+                "averagePay": 3776,
+                "incomePerEmployee": 89959
             },
             {
                 "name": "Arctic 7",
@@ -308,7 +311,8 @@
                 "profit": 29436,
                 "employeeCount": 30,
                 "netPayCosts": 2012842,
-                "averagePay": " 4009"
+                "averagePay": 4009,
+                "incomePerEmployee": 82742
             }
         ]
     },
