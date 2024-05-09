@@ -150,7 +150,7 @@ function YearItem(props) {
     // let initiallyOpened = false
     if (Number.parseInt(props.item.year) < 2020) {
         // @ts-ignore
-        columns[4].hidden = true;
+        columns[3].hidden = true;
         // @ts-ignore
         columns[5].hidden = true;
     } else {

@@ -95,6 +95,21 @@ function CompanyCharts({params}: { params: { name: string } }) {
             style: columnStyle,
         },
         {
+            text: "Average Pay*",
+            dataField: "averagePay",
+            formatter: currencyFormatter,
+            sort: true,
+            sortFunc: (a, b, order, dataField, rowA, rowB) => {
+                if (order === "asc") {
+                    return rowA.averagePay - rowB.averagePay;
+                }
+                return rowB.averagePay - rowA.averagePay;
+            },
+            headerStyle: headerStyle2,
+            align: "right",
+            style: {columnStyle},
+        },
+        {
             text: "Revenue per Employee",
             dataField: "incomePerEmployee",
             formatter: currencyFormatter,
